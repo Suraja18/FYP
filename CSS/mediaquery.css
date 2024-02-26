@@ -1,0 +1,838 @@
+@media screen and (max-width: 1439px) {
+    .pt-2 {
+        padding-top: 2rem;
+    }
+
+    .pr-5t {
+        padding-right: 5rem;
+    }
+
+    .pt-7b {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    .p5 {
+        padding: 5rem;
+    }
+
+    .mt-4a {
+        margin-top: 3.625rem;
+    }
+
+    .gap-2m>*+* {
+        margin-top: 2.5rem;
+    }
+
+    .container {
+        max-width: 1300px;
+    }
+
+    .ads-container {
+        max-width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .pt-2 {
+        padding-top: 2rem;
+    }
+
+    .pr-5t {
+        padding-right: 4rem;
+    }
+
+    .p5 {
+        padding: 4rem;
+    }
+
+    .pt-7b {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .mt-4a {
+        margin-top: 3.25rem;
+    }
+
+    .gap-2m>*+* {
+        margin-top: 2.375rem;
+    }
+
+    .container {
+        max-width: 1120px;
+    }
+
+    .ads-container {
+        max-width: 1080px;
+    }
+    .result-row{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1120px){
+    .result-content-left{
+        flex: none;
+        margin-right: 0;
+        width: 100%;
+        max-width: none;
+    }
+    .result-content-right{
+        flex: none;
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    .result-list-content{
+        display: flex;
+        flex: 0 0 30%;
+        justify-content: space-between;
+    }
+    .differenceContent{
+        flex: 0 1 200px;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .elementor-inner-section{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+    .elementor-content{
+        flex-wrap: wrap;
+    }
+    .tenantsLandlord-joining-ads{
+        padding: 20px;
+    }
+    .ads--row{
+        flex-wrap: wrap;
+    }
+    .tenantsLandlord-column-wrap{
+        background-image: url(https://res.cloudinary.com/evolve-vacation-rental-network/images/v1688754298/evolvevacationrental.com/growfootergraphic-1/growfootergraphic-1.png?_i=AA);
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: 278px auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navigationMenu-container-inner {
+        display: none;
+    }
+    .pr-5t {
+        padding-right: 0;
+    }
+    .gap-2m>*+* {
+        margin-top: 2rem;
+    }
+    .p5 {
+        padding: 3.25rem;
+    }
+
+    .pt-7b {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .mobile-nav-panel {
+        height: 0;
+        display: block;
+        overflow: hidden;
+    }
+    .navigationMenu-boxLinks {
+        margin-bottom: 1.2rem;
+    }
+    .mobile-nav-panel-inner {
+        height: 100%;
+        padding-top: 9.25rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        overflow: scroll;
+    }
+    .navigationMenu{
+        height: auto;
+        background-color: #fff;
+    }
+    .navigationMenu-container{
+        padding: 1rem 2.375rem 1rem 3rem;
+    }
+    .nav-part {
+        display: block;
+    }
+    .nav-position {
+        padding-bottom: 0;
+    }
+
+    .nav-header-bar {
+        border-bottom: 1px solid var(--slate-grey-10-101);
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+    }
+
+    .nav_icon {
+        display: flex;
+        position: relative;
+    }
+
+    .nav-contents {
+        overflow: hidden;
+    }
+
+    .nav-wrapper-section.no-margin {
+        grid-row-gap: 5px;
+        flex-flow: column wrap;
+        display: flex;
+    }
+
+    .nav-col-1 {
+        width: 100%;
+        padding-top: 1rem;
+        display: block;
+    }
+
+    .header-tag.nav-sub-title {
+        margin-left: 0;
+    }
+
+    .nav-subheader-listitems {
+        margin-bottom: 0;
+        padding: 1.25rem 0;
+    }
+
+    .nav-last-position {
+        border-bottom: 1px solid var(--slate-grey-10-101);
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+    }
+
+    .nav-last-position.is-last {
+        margin-bottom: 3rem;
+    }
+
+    .mobile-nav {
+        width: 1.5rem;
+        height: 1.5rem;
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+
+    .nav-mobile-buttons {
+        margin-bottom: 3rem;
+    }
+
+    .nav-buttons {
+        align-items: center;
+    }
+
+    .btnPrimary.nav {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+    .hero-banner{
+        grid-row-gap: 2rem;
+        flex-flow: column wrap;
+        display: flex;
+        position: static;
+    }
+    .col-50{
+        width: 100%;
+        flex-wrap: wrap;
+        flex: 0 auto;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .col-50.hero-left{
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+    .col-50.hero-left.hero{
+        order: -1;
+    }
+    .hero-container{
+        max-width: none;
+    }
+    .hero-content{
+        text-align: left;
+    }
+    .hero-content.gap-2m{
+        display: block;
+    }
+    .hero-subHeader-text{
+        font-size: 1.5rem;
+    }
+    .paragraph {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .hero-image-container{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .result-row{
+        margin-left: 0;
+    }
+    .result-title{
+        line-height: 1.125;
+        letter-spacing: -.22px;
+        font-size: 2rem;
+    }
+    .result-list-content{
+        margin-bottom: 10px;
+    }
+    .differenceResult{
+        line-height: 19px;
+        margin-top: 5px;
+    }
+    .client-header{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .h3-client-heading{
+        grid-row-gap: 1rem;
+        flex-wrap: wrap;    
+    }
+    .client-header-link{
+        flex: none;
+        align-self: flex-start;
+    }
+    .testimonial-container{
+        grid-row-gap: 0rem;
+        flex-flow: column wrap;
+        display: flex;
+        position: static;
+    }
+    .testimonial-items{
+        flex-wrap: wrap;
+    }
+    .quote{
+        margin-bottom: 4rem;
+        display: none;
+    }
+    .testimonial-wrappers{
+        top: 1rem;
+        bottom: auto;
+        left: 1rem;
+        right: auto;
+    }
+    .testimonial-wrappers.for-mobile{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .mediumText.mt-4a.client-says{
+        margin-top: 0;
+    }
+    .testimonial_profile{
+        width: 60px;
+        height: 60px;
+        display: flex;
+    }
+    .testimonial-profile-mobile{
+        object-fit: fill;
+        width: 100%;
+    }
+    .col-50.testimonialCol.clientImage{
+        height: 300px;
+        order: -1;
+        margin-top: 0;
+        margin-left: auto;
+        display: block;
+    }
+    .hero-content.pt-2.for-mobile-only{
+        display: block;
+    }
+    .hero-testimonial.testi-button{
+        display: block;
+        position: static;
+    }
+    .service-grid{
+        grid-row-gap: 1rem;
+    }
+    .footer-width{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .footer-top-left{
+        grid-column-gap: 1rem;
+        grid-row-gap: 0.5rem;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .text-testimonial.footer-tagline{
+        margin-left: 0;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid{
+        flex-direction: column;
+        display: flex;
+    }
+    .footer-link.sublink.mr-2{
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+    }
+    .footer-text-end{
+        flex: 0 auto;
+    }
+    #footerNode {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pr-5t {
+        padding-right: 0;
+    }
+    .gap-2m>*+* {
+        margin-top: 2rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .p5 {
+        padding: 2.5rem;
+    }
+
+    .pt-7b {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .nav-mobile-buttons {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .navigationMenu-container{
+        padding: 0.75rem 1.375rem 0.75rem 2rem;
+    }
+    .btnPrimary.nav {
+        width: 50%;
+        text-align: center;
+    }
+    .btnPrimary.navForm.nav.navButton{
+        display: none;
+    }
+    .btnSecondary.nav.navButton{
+        display: none;
+    }
+    .text-btn {
+        white-space: nowrap;
+    }
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .btnPrimary.nav:hover .text-btn.nav-text-color {
+        background-color: var(--core-navy-800);
+        color: var(--white);
+    }
+    .col-50{
+        margin-right: auto;
+    }
+    .btnSecondary.navForm.nav {
+        width: 50%;
+        height: 2.75rem;
+        text-align: center;
+    }
+
+    .mobile-nav-panel-inner {
+        padding-top: 6.75rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .hero-subHeader-text{
+        font-size: 1.3rem;
+    }
+    .text-testimonial {
+        font-size: 1rem;
+    }
+    .paragraph {
+        text-align: left;
+    }
+    .result-content-right{
+        display: block;
+    }
+    .differenceIconContent{
+        flex: 0 0 auto;
+        height: 70px;
+        margin-right: 35px;
+        width: 70px;
+    }
+    .differenceIconContent img{
+        height: 50px;
+        width: 50px;
+    }
+    .differenceContent{
+        max-width: none;
+        flex: 1 1 auto;
+    }
+    .mediumText{
+        font-size: 1.5rem;
+    }
+    .client-header-link{
+        align-self: center;
+    }
+    .hero-content.pb-4{
+        flex-flow: column wrap;
+        display: flex;
+    }
+    .quote{
+        margin-bottom: 1rem;
+    }
+    .image-quotes{
+        align-self: flex-start;
+        display: none;
+    }
+    .testimonial-wrappers.for-mobile{
+        margin-bottom: 0;
+        display: inline-block;
+        position: relative;
+        top: 0%;
+        bottom: auto;
+        left: 0%;
+        right: auto;
+    }
+    .testimonial-img-profile{
+        max-width: 120px;
+        min-width: 100px;
+    }
+    .mediumText.mt-4a.client-says{
+        font-size: 1.125rem;
+        margin-top: 1rem;
+    }
+    .hero-content.mt-4a.is-quote{
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 0;
+    }
+    .col-50.testimonialCol.clientImage{
+        height: 250px;
+        display: block;
+    }
+    .container.elements{
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
+    .elementor-icons{
+        width: 18%;
+    }
+    .elementor-inner-contents{
+        width: 82%;
+        padding-left: 1rem;
+    }
+    .elementor-header-size{
+        font-size: 28px;
+    }
+    .elementor-header-paragraph{
+        font-size: 15px;
+    }
+    .tenantsLandlord-joining-ads{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .tenantsLandlord-sub-container{
+        width: 100%;
+    }
+    .tenantsLandlord-column-wrap{
+        background-image: url(https://res.cloudinary.com/evolve-vacation-rental-network/images/v1688753328/evolvevacationrental.com/transparent-button-tablet/transparent-button-tablet.png?_i=AA);
+        padding: 20px;
+    }
+    .tenantsLandlord-section{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .col-66{
+        width: 100%;
+    }
+    .ads-header h2{
+        text-align: center;
+        font-size: 35px;
+    }
+    .ads-header p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .footer-width{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .footer-top{
+        grid-row-gap: 1rem;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .footer-top-left{
+        margin-right: 2rem;
+    }
+    .footer_logo{
+        margin-right: 1rem;
+    }
+    .footer-top-right{
+        margin-right: auto;
+    }
+    .social_btn{
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-link.header{
+        padding-top: 1.5rem;
+    }
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .footer_date{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .p5 {
+        padding: 2.25rem;
+    }
+    .pt-7b {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+    .hero-image-container.lightblueColor {
+        height: 350px;
+    }
+    .result-title{
+        font-size: 1.75rem;
+    }
+    .search-box-left,
+    .search-box-right,
+    .search-input-box{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .btnPrimary.navButton.is-search{
+        width: 100%;
+    }
+    .elementor-icons-wrapper {
+        padding: 0;
+    }
+    .elementor-inner-section{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .pr-5t {
+        padding-right: 0;
+    }
+    .p5 {
+        padding: 2rem;
+    }
+    .pt-7b {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    h1 {
+        font-size: 1.75rem;
+    }
+    .btnSecondary {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .navigationMenu-container{
+        padding: 0.6rem 0.75rem 0.6rem 1.5rem;
+    }
+    .mobile-nav-panel-inner {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .navigationMenu-logo{
+        max-width: 8rem;
+    }
+    .nav-header-bar {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .header-tag {
+        display: block;
+    }
+    .hero-banner{
+        flex-flow: column-reverse wrap;
+    }
+    .hero-header-text{
+        font-size: 2rem;
+        display: block;
+    }
+    .col-50{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        display: flex;
+    }
+    .hero-button{
+        width: 100%;
+        grid-row-gap: 1rem;
+        flex-direction: column;
+        display: flex;
+    }
+    .btnPrimary {
+        text-align: center;
+        flex: 1;
+        align-self: stretch;
+        display: block;
+    }
+    .hero-image-container.lightblueColor {
+        height: 250px;
+    }
+    .client-header{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .mediumText.inline-block{
+        font-size: 1.375rem;
+        line-height: 1.2;
+    }
+    .testimonial-container{
+        flex-flow: column-reverse wrap;
+    }
+    .hero-content.pb-4{
+        align-content: flex-start;
+        align-items: flex-start;
+    }
+    .quote{
+        display: block;
+    }
+    .image-quotes{
+        max-width: 80%;
+        overflow: visible;
+    }
+    .testimonial-img-profile{
+        max-height: 3rem;
+        max-width: 100px;
+        min-width: 70px;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .col-50.testimonialCol.p2-5{
+        padding: 2.5rem;
+    }
+    .hero-content.mt-4a{
+        flex-wrap: wrap;
+    }
+    .testimonial_profile{
+        width: 60px;
+        height: 60px;
+    }
+    .col-50.testimonialCol.clientImage{
+        display: none;
+    }
+    .hero-content.pt-2.for-mobile-only{
+        width: 100%;
+    }
+    .btn_inner {
+        justify-content: center;
+    }
+    .arrow-icon {
+        align-items: center;
+        line-height: 1rem;
+        display: flex;
+    }
+    #heroTestimonialContent{
+        padding-bottom: 0;
+    }
+    .hero-banner.for-mobiles{
+        flex-flow: column wrap;
+    }
+    .paragraph.for-mobiles{
+        margin-top: 0.5rem;
+    }
+    .hero-banner{
+        grid-row-gap: 1rem;
+    }
+    .footer-width{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .footer-top{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-top-left{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .footer_logo{
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+    .footer-top-right{
+        width: 100%;
+        justify-content: center;
+        margin-left: auto;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+    .footer-link.header{
+        padding-top: 1rem;
+    }
+    .footer-link{
+        text-align: left;
+        transition: color .2s;
+    }
+    #footerNode{
+        display: block;
+        justify-self: stretch;
+        padding-bottom: 0;
+    }
+    .footer_date{
+        text-align: center;
+        margin-bottom: 1.25rem;
+        display: block;
+    }
+    .footer-link.sublink.mr-2{
+        margin-bottom: 1.25rem;
+        margin-right: 0;
+        display: block;
+    }
+    .footer-text-end{
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: 1.25;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1079px) {
+    .navigationMenu-container-inner {
+        left: 14rem;
+        -webkit-transform: translate(0%, 0px);
+        -ms-transform: translate(0%, 0px);
+        transform: translate(0%, 0px);
+    }
+}
