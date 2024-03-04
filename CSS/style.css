@@ -561,7 +561,9 @@ p {
 .w-clearfix:after {
     clear: both
 }
-
+.center-justify{
+    justify-content: center !important;
+}
 .text-size-3 {
     font-size: 3rem;
 }
@@ -698,7 +700,9 @@ a {
 }
 
 .navigationMenu-items-links:hover,
+.navigationMenu-items-links.active,
 .text-testimonial.nav-primary.is-green-text-on-hover:hover,
+.text-testimonial.nav-primary.is-green-text-on-hover.active,
 .footer-link:hover,
 .read-more-btn:hover{
     color: var(--green-100);
@@ -1521,6 +1525,9 @@ a {
 .housing-grid-list-items {
     flex: 0 0 auto;
     width: 100%;
+    visibility: visible;
+    animation-delay: 0.1s; 
+    animation-name: fadeInUp;
 }
 
 .housing-grid-list-container {
@@ -1602,6 +1609,30 @@ a {
     padding-bottom: 0.5rem !important;
     color: var(--core-navy-800);
 }
+.housing-grid-list-items:hover {
+    transform: scale(1.05);
+}
+
+.pagination {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: end;
+}
+
+.page-link {
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.page-link:hover,
+.page-link.active {
+    background-color: var(--green-100);
+    color: var(--whiteColor);
+    border-color: var(--green-100);
+}
+
 
 /* End Housing Details */
 /* Start Overview Client Says */
@@ -2329,12 +2360,21 @@ right: 7.5%;
 left: unset;
 }
 
-.infinity-photo-content{
+.infinity-photo-content {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-    transition: opacity 3s ease-in-out; 
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.infinity-photo-content.active {
+    opacity: 1;
+}
+
+.infinity-photo-content:not(:first-child) {
+    opacity: 0;
 }
 .hero-content.gap-2m{
     -webkit-text-stroke-color: var(--neutral--white);
@@ -2443,4 +2483,225 @@ left: unset;
     position: static;
     cursor: pointer;
 }
+.user-details-full-container{
+    background-color: var(--green-10-101);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+}
+.user-details-wrapper{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.wrapper-sliders{
+    position: relative;
+    overflow: hidden;
+}
+.wrapper-sliders-header-control{
+    width: 100%;
+    max-width: 1472px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    display: flex;
+    position: relative;
+}
+.sliders-arrows{
+    display: flex;
+}
+.sliders-btn{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--white);
+    cursor: pointer;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    transition: box-shadow .2s;
+    display: flex;
+    border: 1px solid var(--neutral--navy-100);
+    box-shadow: none;
+}
+.slider-left-arrows,
+.slider-right-arrows{
+    opacity: 1;
+}
+.whole-sliders{
+    width: 100%;
+    justify-content: flex-start;
+    padding: 3rem 4rem 4rem;
+    display: flex;
+}
+.sliders-grid{
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    transform: translate3d(0px, 0px, 0px);
+}
+.sliders-card{
+    width: 100%;
+    border: 1px solid var(--neutral--navy-200);
+    background-color: var(--white);
+    box-shadow: none;
+    cursor: grab;
+    border-radius: 1.5rem;
+    align-items: stretch;
+    margin-right: 2.2rem;
+    transition: box-shadow .2s;
+    display: block;
+    overflow: hidden;
+}
+.slider-card-inner{
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    display: flex;
+    position: relative;
+}
+.slider-container{
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+.slider-marker{
+    padding-left: 40%;
+}
+.slider-icons{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--core-purple-400);
+    border-radius: 50%;
+    overflow: hidden;
+}
+.slider-icons.text-hover{
+    background-color: var(--green-100);
+}
+.slider-icons.back-hover{
+    background-color: var(--core-blue-400);
+}
+.slide-icon-img{
+    width: 100%;
+    height: 100%;
+}
+.elementorSection.is-bg{
+    margin-top: 1rem;
+    background: var(--blue-100-101);
+}
+.grow-users{
+    width: 100%;
+    position: relative;
+    display: flex;
+    border-radius: 26px;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+.grow-user-containers{
+    transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+    overflow: hidden;
+    padding: 0px 30px 5px 0px;
+}
+.grow-user-header{
+    color: var(--green-100);
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.4em;
+}
+.grow-user-paragraph{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+.grow-user-image-container{
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.grow-user-containers img{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    vertical-align: middle;
+    display: inline-block;
+}
+.tenantsLandlord-section.mt1-5{
+    margin-top: 24px;
+}
+.client-header.about-us{
+    padding-left: 0;
+}
 /* End ABout HEro banner */
+
+/* Start Error Page */
+.contaier{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+.fade-animate{
+    visibility: visible;
+    animation-delay: 0.1s;
+    animation-name: fadeInUp;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.error-rows{
+    flex: 0 0 auto;
+    width: 50%;
+}
+.error-img{
+    font-size: calc(1.625rem + 4.5vw);
+    font-weight: 800;
+    line-height: 1.2;
+}
+.error-img.error-images{
+    height: calc(1.625rem + 4.5vw);
+}
+/* End Error Page */
+
+/* Start Property Page */
+.clientSays.bg-blue-lighter{
+    background-color: var(--blue-100-101);
+}
+.clientSays.bg-blue-lighter.pt-7b{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0;
+}
+.property-wrappers{
+    max-width: none;
+    overflow: hidden;
+}
+.container.is-header{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.banner-header{
+    color: var(--core-navy-800);
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.0755;
+}
+/* End Property Page */
