@@ -14,8 +14,7 @@
 //Start Index Hero Banners
 document.addEventListener("DOMContentLoaded", function () {
     const slides = document.querySelectorAll(".heroBannerSlides");
-    if(slides.length > 0)
-    {
+    if (slides.length > 0) {
         let currentSlide = 0;
         function showSlide(index) {
             slides.forEach((slide, i) => {
@@ -40,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 500);
     }
 
-    
+
 
 
     //Start Down and Up Arrow
@@ -119,8 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const slidesRight = document.querySelectorAll(".infinity-photo-content.right-slide-images");
 
 
-    if(slidesLeft.length > 0 && slidesRight.length > 0)
-    {
+    if (slidesLeft.length > 0 && slidesRight.length > 0) {
         function showSlide(slides, index) {
             slides.forEach((slide, i) => {
                 if (i === index) {
@@ -130,17 +128,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         }
-    
+
         function nextAboutSlides() {
             currentLeftSlide = (currentLeftSlide + 1) % slidesLeft.length;
             showSlide(slidesLeft, currentLeftSlide);
-    
+
             currentRightSlide = (currentRightSlide + 1) % slidesRight.length;
             showSlide(slidesRight, currentRightSlide);
         }
-    
+
         showSlide(slidesLeft, currentLeftSlide);
-    
+
         setTimeout(() => {
             nextAboutSlides();
             setInterval(nextAboutSlides, 2500);
@@ -153,14 +151,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const itemsPerPage = 24;
     const housingGrid = document.getElementById("housingGridList");
     const paginationContainer = document.getElementById("paginationContainer");
-    
-    
+
+
     let currentPage = 1;
     const previousPage = document.getElementById("previousPage");
     const nextPage = document.getElementById("nextPage");
 
-    if(housingGrid && paginationContainer && previousPage && nextPage)
-    {
+    if (housingGrid && paginationContainer && previousPage && nextPage) {
         const housingItems = Array.from(housingGrid.querySelectorAll(".housing-grid-list-items"));
         const totalPages = Math.ceil(housingItems.length / itemsPerPage);
         previousPage.addEventListener("click", function () {
@@ -168,14 +165,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayPage(currentPage - 1);
             }
         });
-    
+
         nextPage.addEventListener("click", function () {
             const currentPage = getCurrentPage();
             if (currentPage < totalPages) {
                 displayPage(currentPage + 1);
             }
         });
-    
+
         for (let i = 1; i <= totalPages; i++) {
             const pageLink = document.createElement("span");
             pageLink.classList.add("page-link");
@@ -190,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const activePageLink = paginationContainer.querySelector(".active");
             return activePageLink ? parseInt(activePageLink.textContent) : 1;
         }
-    
+
         function displayPage(pageNumber) {
             housingGrid.innerHTML = "";
             const startIndex = (pageNumber - 1) * itemsPerPage;
@@ -200,9 +197,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 housingGrid.appendChild(housingItem);
             }
             highlightActivePage(pageNumber);
-            currentPage = pageNumber; 
+            currentPage = pageNumber;
         }
-    
+
         function highlightActivePage(pageNumber) {
             const pageLinks = document.querySelectorAll(".page-link");
             pageLinks.forEach(link => link.classList.remove("active"));
@@ -214,6 +211,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+
+    //Smooth Scroll
+    var links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach(function (link) {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            var targetId = this.getAttribute('href').substring(1);
+            var targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                var offsetTop = targetElement.offsetTop;
+
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 
 });
 

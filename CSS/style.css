@@ -372,7 +372,13 @@ a {
 .mr-2 {
     margin-right: 2rem;
 }
-
+.mlr-4p{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.mt-0{
+    margin-top: 0;
+}
 .p2-5 {
     padding: 2.5rem;
 }
@@ -461,7 +467,7 @@ p {
 }
 
 .text-left {
-    text-align: left;
+    text-align: left !important;
 }
 
 .text-justify {
@@ -2705,3 +2711,109 @@ left: unset;
     line-height: 1.0755;
 }
 /* End Property Page */
+
+/* Start Property Owners */
+.col-25{
+    flex: 0 0 auto;
+    width: 25%;
+}
+.col-25.animate{
+    visibility: visible;
+    animation-delay: 0.1s;
+}
+.landlord-containers{
+    box-shadow: 0 0 30px rgba(0,0,0,.08);
+    transition: .5s;
+    border-radius: 5px;
+}
+.img-social-media{
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    align-items: center;
+}
+.social-media-button{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    font-weight: 400;
+    border-radius: 50px;
+    width: 38px;
+    height: 38px;
+    box-shadow: 0 0 30px rgba(0,0,0,.15);
+    background: var(--whiteColor);
+}
+.social-media-button {
+    transition: fill 0.5s;
+}
+
+.social-media-button svg {
+    width: 38px;
+    height: 28px;
+    fill: var(--green-100);
+}
+.social-media-button:hover svg{
+    fill: var(--whiteColor);
+}
+.social-media-button:hover{
+    background-color: var(--green-100);
+}
+
+.landlord-wrappers{
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+.heading-larger.for-landlord{
+    font-size: 1.75rem;
+
+}
+.property-types-container{
+    grid-column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    grid-row-gap: 2rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-auto-columns: 1fr;
+    display: grid;
+    flex-flow: wrap;
+    align-content: stretch;
+}
+.property-type-block{
+    width: 100%;
+}
+.property-type-links{
+    width: 100%;
+}
+.property-types-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.hero-content.is-property-content.text-left{
+    margin-top: 1rem;
+}
+.property-type-icons{
+    width: 3rem;
+}
+.heading-types{
+    color: var(--core-navy-800);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.125;
+}
+.text-service-paragraph.is-paragraph{
+    text-align: center;
+}
+/* End Property Owners */
