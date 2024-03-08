@@ -6,11 +6,15 @@
         padding-top: 7rem;
         padding-bottom: 7rem;
     }
-
+    .mt-5r>*+*{
+        margin-top: 4.25rem;
+    }
     .p5 {
         padding: 5rem;
     }
-
+    .mt-3 > * + *{
+        margin-top: 2.875rem;
+    }
     .mt-4a {
         margin-top: 3.625rem;
     }
@@ -43,18 +47,26 @@
     .pr-5t {
         padding-right: 4rem;
     }
-
+    .pt-5b{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     .p5 {
         padding: 4rem;
     }
     .mb-3 > * + *{
         margin-top: 3rem;
     }
+    .mt-3 > * + *{
+        margin-top: 2.625rem;
+    }
     .pt-7b {
         padding-top: 6rem;
         padding-bottom: 6rem;
     }
-
+    .mt-5r>*+*{
+        margin-top: 3.625rem;
+    }
     .mt-4a {
         margin-top: 3.25rem;
     }
@@ -85,6 +97,9 @@
     }
     .error-img.error-images{
         height: 5rem;
+    }
+    .pt-4{
+        padding-top: 4rem;
     }
 }
 @media screen and (max-width: 1120px){
@@ -149,9 +164,15 @@
     .mb-3 > * + *{
         margin-top: 2.25rem;
     }
+    .mt-3 > * + *{
+        margin-top: 2.25rem;
+    }
     .pt-7b {
         padding-top: 5rem;
         padding-bottom: 5rem;
+    }
+    .mt-5r>*+*{
+        margin-top: 2.75rem;
     }
     .pl-2{
         padding-left: 0;
@@ -160,6 +181,9 @@
         height: 0;
         display: block;
         overflow: hidden;
+    }
+    .mt1-5>*+*{
+        margin-top: 1rem;
     }
     .navigationMenu-boxLinks {
         margin-bottom: 1.2rem;
@@ -496,6 +520,29 @@
     .col-25{
         width: 33.33%;
     }
+    .search-input-box.animate{
+        width: 50%;
+    }
+    .hero-content.is-50-mobile{
+        width: 100%;
+    }
+    .testimonial-three-grid{
+        grid-template-columns: 1fr;
+    }
+    .testimonial-imag-profile{
+        object-fit: fill;
+    }
+    .pt-5b{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .c-wrappers{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .pt-4{
+        padding-top: 3rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -505,16 +552,24 @@
     .gap-2m>*+* {
         margin-top: 2rem;
     }
+    .p2-5{
+        padding: 1.75rem;
+    }
     h1 {
         font-size: 2rem;
     }
     .p5 {
         padding: 2.5rem;
     }
-
+    .mt-3 > * + *{
+        margin-top: 2.25rem;
+    }
     .pt-7b {
         padding-top: 4rem;
         padding-bottom: 4rem;
+    }
+    .mt-5r>*+*{
+        margin-top: 2.75rem;
     }
     .nav-mobile-buttons {
         max-width: 360px;
@@ -557,7 +612,9 @@
         height: 2.75rem;
         text-align: center;
     }
-
+    h3 {
+        font-size: 1.5rem;
+    }
     .mobile-nav-panel-inner {
         padding-top: 6.75rem;
         padding-left: 2rem;
@@ -825,6 +882,55 @@
     .text-service-paragraph.is-paragraph{
         text-align: left;
     }
+    .contact-container{
+        flex-direction: column;
+        display: flex;
+    }
+    .col-55{
+        width: 100%;
+        display: block;
+    }
+    .form-field-wrappers{
+        display: block;
+    }
+    .testimonial-three-grid{
+        grid-row-gap: 2rem;
+    }
+    .img-get-Touch{
+        width: 5rem;
+    }
+    .c-wrappers{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .question-wrap{
+        padding: 1.75rem;
+    }
+    .heading-xS{
+        font-size: 1rem;
+    }
+    .question-contents{
+        padding-bottom: 2rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+    .roles-three-grid{
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+    }
+    .roles-content-card{
+        border-radius: 1rem;
+    }
+    .landing-card-cover{
+        border-radius: 0.5rem;
+    }
+    .landing-card-img{
+        border-radius: 0.5rem;
+    }
+    .pl1-5r{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -845,6 +951,9 @@
     .search-box-right,
     .search-input-box{
         margin-top: 1rem;
+        width: 100%;
+    }
+    .search-input-box.animate{
         width: 100%;
     }
     .btnPrimary.navButton.is-search{
@@ -887,6 +996,17 @@
     .pr-5t {
         padding-right: 0;
     }
+    .ptb-4 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .plr-4 {
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+    }
+    .p2-5{
+        padding: 1.5rem;
+    }
     .p5 {
         padding: 2rem;
     }
@@ -896,6 +1016,9 @@
     }
     h1 {
         font-size: 1.75rem;
+    }
+    h3 {
+        font-size: 1.375rem;
     }
     .btnSecondary {
         width: 100%;
@@ -1128,6 +1251,37 @@
     }
     .hero-content.is-property-content.text-left{
         margin-left: 1rem;
+    }
+    .wow.fadeInUp.mt-3.p4r{
+        padding: .75rem;
+        padding-top: 4rem;
+    }
+    .testimonial-three-grid{
+        grid-row-gap: 1.5rem;
+    }
+    .c-wrappers{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .question-wrap{
+        flex-wrap: wrap;
+        padding: 1.25rem;
+    }
+    .question-wrap-questions{
+        flex: 1;
+    }
+    .question-wrap-text{
+        flex-wrap: wrap;
+    }
+    .question-contents{
+        padding-bottom: 1.75rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    .roles-three-grid{
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 1.5rem;
+        grid-template-columns: 1fr;
     }
 }
 
