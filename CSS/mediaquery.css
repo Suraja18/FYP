@@ -202,6 +202,9 @@
     .navigationMenu-container{
         padding: 1rem 2.375rem 1rem 3rem;
     }
+    .pb3-5{
+        padding-bottom: 3rem;
+    }
     .nav-part {
         display: block;
     }
@@ -543,6 +546,41 @@
     .pt-4{
         padding-top: 3rem;
     }
+    .hero-banner.reverse{
+        flex-flow: column-reverse wrap-reverse;
+        align-items: stretch;
+        display: flex;
+    }
+    .roles-user-banners{
+        border-radius: 1rem;
+    }
+    .breadcrumb-container{
+        display: none;
+    }
+    .card-image-sliders-display{
+        height: 225px;
+    }
+    .combo-btn-card{
+        flex: none;
+        align-self: flex-start;
+    }
+    .sliders-card.for-slide-role{
+        width: 350px;
+    }
+    .sliders-grid.for-slide-role{
+        flex-direction: row;
+    }
+    .role-property-grids{
+        grid-column-gap: 3rem;
+        grid-row-gap: 3rem;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+    }
+    .role-property-img{
+        max-width: 80%;
+        align-self: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -658,6 +696,9 @@
     }
     .quote{
         margin-bottom: 1rem;
+    }
+    .text-higher{
+        font-size: 1.2rem;
     }
     .image-quotes{
         align-self: flex-start;
@@ -931,6 +972,22 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .hero-banner.reverse{
+        flex-direction: column-reverse;
+    }
+    .card-image-sliders-display{
+        border-radius: 0.5rem;
+    }
+    .sliders-card.for-slide-role{
+        width: 340px;
+    }
+    .role-property-grids{
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 2.5rem;
+    }
+    .role-property-img{
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -973,7 +1030,9 @@
     .error-rows{
         width: 85%;
     }
-    
+    .sliders-card.for-slide-role{
+        width: 330px;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -989,6 +1048,9 @@
     .property-types-container{
         flex-direction: column;
         grid-template-columns: unset;
+    }
+    .sliders-card.for-slide-role{
+        width: 320px;
     }
     
 }
@@ -1283,6 +1345,33 @@
         grid-row-gap: 1.5rem;
         grid-template-columns: 1fr;
     }
+    .hero-banner.reverse{
+        flex-flow: column-reverse wrap-reverse;
+        display: flex;
+    }
+    .card-image-sliders-display{
+        height: 190px;
+    }
+    .whole-sliders.for-slide-role{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sliders-card.for-slide-role{
+        width: 300px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    .sliders-card.for-slide-role.active{
+        opacity: 1;
+        visibility: visible;
+    }
+    .role-property-grids{
+        grid-column-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+        grid-template-columns: 1fr;
+    }
+    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1079px) {

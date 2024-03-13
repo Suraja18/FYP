@@ -233,6 +233,42 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
+    // Role Sliders
+    const slidersWrapper = document.querySelector('.whole-sliders.for-slide-role');
+    const cards = document.querySelectorAll('.sliders-card.for-slide-role');
+
+    if (slidersWrapper && cards.length > 0) {
+        const cardWidth = cards[0].offsetWidth;
+        let currentIndex = 0;
+
+        document.querySelector('.slider-left-arrows').addEventListener('click', function () {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        });
+
+        document.querySelector('.slider-right-arrows').addEventListener('click', function () {
+            const maxIndex = cards.length - 1;
+            if (currentIndex < maxIndex) {
+                currentIndex++;
+                updateSlider();
+            }
+        });
+
+        function updateSlider() {
+            cards.forEach((card, index) => {
+                card.classList.toggle('active', index === currentIndex);
+            });
+
+            const newPosition = -currentIndex * cardWidth;
+            slidersWrapper.style.transform = `translateX(${newPosition}px)`;
+        }
+    }
+
+
+
 });
 
 

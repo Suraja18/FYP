@@ -313,7 +313,7 @@ a {
     padding-right: 5rem;
 }
 .mt1-5>*+*{
-    margin-top: 1.5rem;
+    margin-top: 1.5rem !important;
 }
 .ptb-3 {
     padding-top: 3rem;
@@ -333,7 +333,6 @@ a {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
-
 .ptb-2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -375,7 +374,9 @@ a {
 .p3 {
     padding: 3rem;
 }
-
+.pb3-5{
+    padding-bottom: 3.5rem;
+}
 .plr-4 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -385,10 +386,10 @@ a {
     padding-bottom: 5rem;
 }
 .mb-3>*+* {
-    margin-top: 3.5rem;
+    margin-top: 3.5rem !important;
 }
 .mt-5r>*+*{
-    margin-top: 5rem;
+    margin-top: 5rem !important;
 }
 .mr-2 {
     margin-right: 2rem;
@@ -464,7 +465,7 @@ h2 {
     line-height: 1.125;
 }
 h3 {
-    color: var(--navy-core);
+    color: var(--core-navy-800);
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0.05px;
@@ -3245,3 +3246,205 @@ left: unset;
     display: block;
 }
 /* End COntact US Section */
+/* Start Roles Section */
+.no-pt{
+    padding-top: 0 !important;
+}
+.no-pb{
+    padding-bottom: 0 !important;
+}
+.roles-user-banners{
+    width: 100%;
+    object-fit: fill;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.role-banner-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+.breadcrumb-container{
+    max-width: 1472px;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4rem;
+    position: relative;
+}
+.breadcrumb-wrapper{
+    z-index: 1;
+    display: flex;
+    position: absolute;
+}
+.breadcrumb-item{
+    cursor: pointer;
+    transition: color .2s;
+    display: inline-block;
+}
+.breadcrumb-head{
+    color: var(--neutral--navy-800);
+    -webkit-text-stroke-color: var(--core-navy-800);
+    font-weight: 600;
+}
+.right-arrows{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+.breadcrumb-item.active{
+    cursor: default;
+}
+.breadcrumb-head.active{
+    color: var(--neutral--navy-400);
+}
+.text-higher{
+    color: var(--neutral--navy-800);
+    margin-bottom: 0;
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.35;
+    display: block;
+}
+.is-bg-orange{
+    background-color: var(--orange-30) !important;
+}
+.wrapper-slide-contents{
+    display: inline-block;
+}
+.sliders-links-card{
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: block;
+    position: relative;
+}
+.card-image-sliders-display{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+.sliders-cards-contents{
+    padding: 2rem 1.5rem;
+    position: relative;
+}
+.processes-card-icon{
+    margin-bottom: 1.5rem;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    will-change: opacity;
+}
+.heading-paragraph-hover{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    will-change: opacity;
+}
+.sliders-card.for-slide-role{
+    width: 378px;
+    height: 420px;
+}
+.sliders-card:hover .heading-paragraph-hover,
+.sliders-card:hover .processes-card-icon
+{
+    opacity: 1;
+    display: block;
+}
+.sliders-card:hover .card-image-sliders-display,
+.sliders-card:hover .text-sub-headers
+{
+    opacity: 0;
+    display: none;
+}
+.whole-sliders.for-slide-role{
+    transition: transform 0.5s ease-in-out;
+}
+.combo-btn-card{
+    cursor: pointer;
+    border-bottom-style: none;
+    align-items: center;
+    display: flex;
+}
+.combo-btn-icon{
+    width: 24px;
+    height: auto;
+    float: left;
+    border-radius: 0;
+    flex: none;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 0.5rem;
+    display: flex;
+    position: static;
+}
+.role-property-grids{
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    display: grid;
+    overflow: visible;
+}
+.role-property-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    align-self: center;
+}
+/* End Roles Section */
+
+/* Start Press and Media */
+.email-bold{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.roles-content-card-links.for-news{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    display: flex;
+}
+.header-tag.is-tags{
+    font-size: .9rem;
+    display: inline-block;
+}
+.header-tag.is-normal-tags{
+    color: var(--neutral--navy-600);
+    margin-left: 0.375rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.news-containers{
+    height: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+.text-sub-headers.is-news-containers{
+    height: 100%;
+    position: relative;
+}
+.text-min-opacity{
+    width: 100%;
+    height: 1rem;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), #fff);
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+}
+.navigation-for-roles{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+}
+/* End Press and Media */
