@@ -101,6 +101,10 @@
     .pt-4{
         padding-top: 4rem;
     }
+    .is-header-all-container{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 @media screen and (max-width: 1120px){
     .result-content-left{
@@ -581,6 +585,7 @@
         max-width: 80%;
         align-self: center;
     }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -988,6 +993,95 @@
     .role-property-img{
         max-width: 100%;
     }
+    .is-tenant-banners{
+        height: 100%;
+    }
+    .hide{
+        display: none !important;
+    }
+    .is-tenant-banners{
+        padding-top: 0;
+    }
+    .is-header-all-wrappers{
+        overflow-y: auto;
+        width: 100%;
+        height: 100%;
+    }
+    .is-header-all-wrappers.padding{
+        padding: 10px 0;
+    }
+    .header-f0r-mobile{
+        display: block;
+        background-color: #fff;
+        padding: 10px 0 20px 0;
+        font-size: 1.3rem;
+        line-height: 1;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    }
+    .header-left-title{
+        display: none;
+    }
+    .placeholder-grid{
+        justify-items: center;
+        justify-content: center;
+        height: 330px;
+        max-height: 330px;
+    }
+    .loading-req{
+        position: absolute;
+        top: 0;
+        left: 0;   
+    }
+    .text-small-for-mobile{
+        font-size: 1rem;
+    }
+    .status-filter{
+        grid-column-gap: 15px;
+        margin: 0 -15px 0 0;
+        padding-right: 15px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .status-filter-search.for-desktop{
+        display: none;
+    }
+    .status-filter-search.for-mobile{
+        display: block;
+        height: 25px;
+    } 
+    .maintainance-card.card-horizontal{
+        grid-gap: 20px 10px;
+        grid-template-areas:
+            "avatar header-left header-right"
+            "title title title"
+            "description description description"
+            "extra-content extra-content additional-info";
+        grid-template-columns: auto auto 1fr;
+        padding: 15px;
+    }   
+    .maintainance-card .card-view-btn *{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 0;
+        background-color: transparent !important;
+        border: 0;
+        box-shadow: none!important;
+    }
+    .card-maintainance-hurry,
+    .maintainance-card .card-right-grid{
+        display: inline-block;
+        justify-content: right;
+    }
+    .maintainance-card .card-right-grid{
+        z-index: 99;
+    }
 }
 
 @media screen and (max-width: 600px){
@@ -1033,6 +1127,30 @@
     .sliders-card.for-slide-role{
         width: 330px;
     }
+    .small-text{
+        margin: 0;
+        font-size: .7rem;
+        text-align: center;
+        transition: color 0.3s ease;
+    }
+    .navigationMenu-controls-list.profile{
+        height: 37px;
+    }
+    .btn-profile-containers{
+        width: 100%;
+        padding: 0;
+    }
+    .nav_icon,
+    .navigationMenu-controls-list.not-mobile,
+    .profile-names{
+        display: none;
+    }
+    .mobile-below-nav-containers{
+        display: block;
+    }
+    .text-small-for-mobile{
+        font-size: .95rem;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -1052,6 +1170,10 @@
     .sliders-card.for-slide-role{
         width: 320px;
     }
+    .text-small-for-mobile{
+        font-size: .9rem;
+    }
+    
     
 }
 @media screen and (max-width: 480px) {
