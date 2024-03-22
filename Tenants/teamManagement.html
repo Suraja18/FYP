@@ -572,319 +572,165 @@
         <!-- End Navbar -->
 
         <!-- Start Banners -->
-        <div class="is-tenant-banners">
-            <div class="is-header-all-container">
-                <div class="pt-20p hide">
-                    <ul class="banner-header-links">
-                        <li class="banner-header-name">
-                            <a href="index.html" class="banner-link-for-header">Home</a>
-                        </li>
-                        <li class="banner-header-name">
-                            /<span class="banner-link-for-header for-normal">Maintainance Request</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="is-header-all-wrappers">
-                <div class="is-header-all-wrappers">
-                    <div>
-                        <h2 class="header-f0r-mobile text-center">Maintainance Request</h2>
-                        <div class="is-header-all-wrappers padding">
-                            <div class="is-header-all-container padding">
-                                <header class="header-u-flex">
-                                    <div class="header-left-side-wrap">
-                                        <div class="header-left-title">Maintainance Request</div>
-                                        <p>0 Total</p>
-                                    </div>
-                                    <div class="header-right-side-wrap">
-                                        <a href="newrequest.html" class="is-button-for-edit-profile add-icons">
-                                            Add request 
-                                        </a>
-                                    </div>
-                                </header>
-                                <div class="status-maintainance">
-                                    <div class="status-maintainance-container">
-                                        <div class="status-filter-search for-mobile">
-                                            <input type="text" autocomplete="off" placeholder="Search here..." class="filter-search-input">
-                                        </div>
-                                        <div class="status-filter">
-                                            <div class="status-filter-search for-desktop">
-                                                <input type="text" autocomplete="off" placeholder="Search here..." class="filter-search-input">
-                                            </div>
-                                            <div class="status-filter-wrappers p-r">
-                                                <div class="status-filter-container-list" id="statusFullWrapper">
-                                                    <button type="button" class="button-close-for-filter"></button>
-                                                    <div class="filter-inside-text" id="insideTheBox">
-                                                        <span class="mr-5p">Status</span>
-                                                        <!-- <span class="status-filters fw-600">In Progress</span> -->
-                                                    </div>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="15" width="28" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
-                                                </div>
-                                                <div class="status-other-option-container" id="statusFullOption">
-                                                    <div class="status-other-option-wrapper">
-                                                        <div class="popup-header">
-                                                            <h3 class="popup-header-text">Status</h3>
-                                                        </div>
-                                                        <div class="pb-10p">
-                                                            <div class="popup-content">
-                                                                <div>
-                                                                    <select class="multi-scroll" placeholder="Status" id="multiScrollSelect">
-                                                                        <option value="New">New</option>
-                                                                        <option value="In Progress">In Progress</option>
-                                                                        <option value="Cancelled">Cancelled</option>
-                                                                        <option value="Completed">Completed</option>
-                                                                    </select>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="popup-footer">
-                                                            <button class="is-button-for-edit-profile btn-Primary" id="statusApply">Apply</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="status-filter-wrappers status-links status-tick" id="successStatusChange" style="display: none;"> Save filters </div><!-- This show on successfully Applied -->
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="maintainance-request-grid">
-                                    <div class="maintainance-grid-column">
-                                        <div role="list">
-                                            <div role="listitem">
-                                                <div class="maintainance-card card-horizontal">
-                                                    <div class="card-extra-content">
-                                                        <div class="extra-card-id">#1234</div>
-                                                    </div>
-                                                    <div class="card-title card-title-box">
-                                                        <div class="maintenance-list-item-title">
-                                                            Electrical / Communication / Internet / Not working 
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-left-part">
-                                                        <div class="card-status-checked card-cancelled">Cancelled</div>
-                                                    </div>
-                                                    <div class="card-avatar-icons">
-                                                        <div>
-                                                            <div class="avatar-profile-imgs">
-                                                                <div class="avatar-info-profile">
-                                                                    <div href="#" class="avatar-info-profile-imgs">
-                                                                        <div class="profile-avatar-img">
-                                                                            <div class="profile-avatar-img-wrapper">
-                                                                                <div class="profile-avatar-image profile-avatar-no-img">T</div>
-                                                                                <!-- <img src="../Images/Original/Banner-2.png" class="profile-avatar-image" alt=""> -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-address-description">
-                                                        <div id="cardAddressDescription">
-                                                            <div class="maintenance-list-item-title">ZX Ranch Rd</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-maintainance-hurry">
-                                                        <div class="card-maint">
-                                                            Normal
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-view-btn">
-                                                        <a href="viewrequest.html" class="status-links view-btn">View</a>
-                                                    </div>
-                                                    <div class="card-right-grid">
-                                                        <div class="d-flex p-r">
-                                                            <div class="d-print-icon"></div>
-                                                            <div>
-                                                                <div id="moreIcons">
-                                                                    <button type="button" role="button" class="btn-more-option">
-                                                                        <div class="btn-icons-more"></div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="more-info-for-maintainance">
-                                                                <div class="p-10p">
-                                                                    <div class="btn-container-opt below">
-                                                                        <a href="../Errors/404Error.html" class="upper-btn">Print</a>
-                                                                    </div>
-                                                                    <div class="btn-container-opt">
-                                                                        <a href="../Errors/404Error.html" class="lower-btn">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div role="listitem">
-                                                <div class="maintainance-card card-horizontal">
-                                                    <div class="card-extra-content">
-                                                        <div class="extra-card-id">#1234</div>
-                                                    </div>
-                                                    <div class="card-title card-title-box">
-                                                        <div class="maintenance-list-item-title">
-                                                            Electrical / Communication / Internet / Not working 
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-left-part">
-                                                        <div class="card-status-checked card-in-progress">In Progress</div>
-                                                    </div>
-                                                    <div class="card-avatar-icons">
-                                                        <div>
-                                                            <div class="avatar-profile-imgs">
-                                                                <div class="avatar-info-profile">
-                                                                    <div href="#" class="avatar-info-profile-imgs">
-                                                                        <div class="profile-avatar-img">
-                                                                            <div class="profile-avatar-img-wrapper">
-                                                                                <div class="profile-avatar-image profile-avatar-no-img">T</div>
-                                                                                <!-- <img src="../Images/Original/Banner-2.png" class="profile-avatar-image" alt=""> -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-address-description">
-                                                        <div id="cardAddressDescription">
-                                                            <div class="maintenance-list-item-title">ZX Ranch Rd</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-maintainance-hurry">
-                                                        <div class="card-maint">
-                                                            Normal
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-view-btn">
-                                                        <a href="../Errors/404Error.html" class="status-links view-btn">View</a>
-                                                    </div>
-                                                    <div class="card-right-grid">
-                                                        <div class="d-flex p-r">
-                                                            <div class="d-print-icon"></div>
-                                                            <div>
-                                                                <div id="moreIcons">
-                                                                    <button type="button" role="button" class="btn-more-option">
-                                                                        <div class="btn-icons-more"></div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="more-info-for-maintainance">
-                                                                <div class="p-10p">
-                                                                    <div class="btn-container-opt below">
-                                                                        <a href="../Errors/404Error.html" class="upper-btn">Print</a>
-                                                                    </div>
-                                                                    <div class="btn-container-opt">
-                                                                        <a href="../Errors/404Error.html" class="lower-btn">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div role="listitem">
-                                                <div class="maintainance-card card-horizontal">
-                                                    <div class="card-extra-content">
-                                                        <div class="extra-card-id">#1234</div>
-                                                    </div>
-                                                    <div class="card-title card-title-box">
-                                                        <div class="maintenance-list-item-title">
-                                                            Electrical / Communication / Internet / Not working 
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-left-part">
-                                                        <div class="card-status-checked card-resolved">Resolved</div>
-                                                    </div>
-                                                    <div class="card-avatar-icons">
-                                                        <div>
-                                                            <div class="avatar-profile-imgs">
-                                                                <div class="avatar-info-profile">
-                                                                    <div href="#" class="avatar-info-profile-imgs">
-                                                                        <div class="profile-avatar-img">
-                                                                            <div class="profile-avatar-img-wrapper">
-                                                                                <div class="profile-avatar-image profile-avatar-no-img">T</div>
-                                                                                <!-- <img src="../Images/Original/Banner-2.png" class="profile-avatar-image" alt=""> -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-address-description">
-                                                        <div id="cardAddressDescription">
-                                                            <div class="maintenance-list-item-title">ZX Ranch Rd</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-maintainance-hurry">
-                                                        <div class="card-maint">
-                                                            Urgent
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-view-btn">
-                                                        <a href="../Errors/404Error.html" class="status-links view-btn">View</a>
-                                                    </div>
-                                                    <div class="card-right-grid">
-                                                        <div class="d-flex p-r">
-                                                            <div class="d-print-icon"></div>
-                                                            <div>
-                                                                <div id="moreIcons">
-                                                                    <button type="button" role="button" class="btn-more-option">
-                                                                        <div class="btn-icons-more"></div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="more-info-for-maintainance">
-                                                                <div class="p-10p">
-                                                                    <div class="btn-container-opt below">
-                                                                        <a href="../Errors/404Error.html" class="upper-btn">Print</a>
-                                                                    </div>
-                                                                    <div class="btn-container-opt">
-                                                                        <a href="../Errors/404Error.html" class="lower-btn">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- WHen There is No Request -->
-                                <div class="placeholder no-request">
-                                    <div class="placeholder-container">
-                                        <div class="placeholder-grid opacity-low">
-                                            <ul class="loading-req">
-                                                <li class="placeholder-card">
-                                                    <span class="placeholder-bar-progress"></span>
-                                                </li>
-                                                <li class="placeholder-card">
-                                                    <span class="placeholder-bar-progress"></span>
-                                                </li>
-                                            </ul>
-                                            <div class="placeholder-grid no-req">
-                                                <svg height="35" width="35" class="mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z" fill="#3d3975"/>
-                                                </svg>
-                                                <div class="placeholder-sub-header">
-                                                    No requests
-                                                </div>
-                                                <p class="paragraph text-center text-small-for-mobile"> You can submit a maintenance request if you have a connection with Landlord and shared lease. </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End of WHen There is No Request -->
+        <section class="clientSays bg-blue-lighter pt-7b">
+            <div class="property-wrappers">
+                <div class="container is-header">
+                    <div class="use-case-rows">
+                        <div class="use-case-wrap">
+                            <div class="text-center">
+                                <h1 class="banner-header">Teams Management</h1>
+                                <p class="text-testimonial text-center">Being a landlord you know how important it is to use the right landlord forms and keep them organized and easily accessible. We took care of that and prepared all the documents that you may need for your rental properties.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+       
+        <section class="tm-page-header">
+            <div class="use-case-containers">
+                <div class="use-case-rows">
+                    <div class="use-case-wrap wrap-50">
+                        <div class="use-case-header-desc">
+                            <h1 class="tm-header-title">
+                                Roommates
+                            </h1>
+                            <p class="tm-header-description">
+                                Move-in multiple tenants and track rent payments for each one.
+                            </p>
+                            <a href="../Errors/404Error.html" class="m-button btn-Primary is-new">Login</a>
+                        </div>
+                    </div>
+                    <div class="use-case-wrap wrap-50">
+                        <div class="text-right">
+                            <div>
+                                <img src="https://cdn.tenantcloud.net/builds/v54.0.8/promo/images/landing/roommates/header/screen-header@1-min.png" alt="side banner" class="use-case-image-responsive for-mob">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img width="241" height="521" src="../Images/Original/Request/rightbackgroundcircle.svg" alt="background" class="use-case-image-responsive is-background">
+        </section>
+
+        <section class="p-r">
+            <div class="use-case-containers">
+                <div>
+                    <div class="use-case-rows">
+                        <div class="use-case-wrap wrap-25" role="listitem">
+                            <div class="use-case-feat-for-mob">
+                                <img src="../Images/Original/Request/landlordforum-1.svg" alt="Landlord Forum 1" class="use-case-image-responsive for-mob">
+                                <h2 class="use-case-feat-head for-new">Allow to pay rent jointly or split the amount</h2>
+                            </div>
+                        </div>
+                        <div class="use-case-wrap wrap-25" role="listitem">
+                            <div class="use-case-feat-for-mob">
+                                <img src="../Images/Original/Request/landlordforum-2.svg" alt="Landlord Forum 1" class="use-case-image-responsive for-mob">
+                                <h2 class="use-case-feat-head for-new">Add discounts, and Offers</h2>
+                            </div>
+                        </div>
+                        <div class="use-case-wrap wrap-25" role="listitem">
+                            <div class="use-case-feat-for-mob">
+                                <img src="../Images/Original/Request/landlordforum-3.svg" alt="Landlord Forum 1" class="use-case-image-responsive for-mob">
+                                <h2 class="use-case-feat-head for-new">Do rent increase and decrease</h2>
+                            </div>
+                        </div>
+                        <div class="use-case-wrap wrap-25" role="listitem">
+                            <div class="use-case-feat-for-mob">
+                                <img src="../Images/Original/Request/landlordforum-4.svg" alt="Landlord Forum 1" class="use-case-image-responsive for-mob">
+                                <h2 class="use-case-feat-head for-new">Check Tenants Payment or Not</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img width="307" height="616" src="../Images/Original/Request/leftcirclebackground.svg" alt="background" class="use-case-image-responsive is-background">
+        </section>
+
+        <section class="p-r universal-forum-grid-container">
+            <div class="use-case-containers">
+                <div class="use-case-rows">
+                    <div class="use-case-wrap wrap-50">
+                        <div>
+                            <img width="600" height="594" src="https://th.bing.com/th/id/OIP.0WExR3hipmlOD29swrzN8gAAAA?rs=1&pid=ImgDetMain" alt="" class="use-case-image-responsive for-mob">
+                        </div>
+                    </div>
+                    <div class="use-case-wrap wrap-50 tm">
+                        <div>
+                            <h3 class="use-case-feat-head header tm">
+                                Rent to multiple tenants?
+                            </h3>
+                            <p class="tm-paragraph-wrap">With TenantCloud, roommates can pay their individual portion of the rent individually or pay one invoice jointly.<br/>Every roommate sets their own TenantCloud account and can access the lease and transactions.</p>
+                            <a href="../Errors/404Error.html" class="a-link">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="p-r universal-forum-grid-container">
+            <div class="use-case-containers">
+                <div class="text-center">
+                    <h2 class="use-case-feat-head header">Rent to roommates in just a few steps</h2>
+                    <p class="tm-paragraph-wrap text-center ">Moving in tenants to the same rental unit and organizing their rental payments has never been easier or more convenient.</p>
+                </div>
+                <div>
+                    <div class="use-case-rows">
+                        <div class="use-case-wrap wrap-50">
+                            <div class="use-case-wrap-items">
+                                <div class="image-before">
+                                    <img src="../Images/Original/Request/aggrement.svg" alt="icons">
+                                </div>
+                                <h3 class="use-case-feat-head">Run a screening report for each tenant</h3>
+                            </div>
+                        </div>
+                        <div class="use-case-wrap wrap-50">
+                            <div class="use-case-wrap-items">
+                                <div class="image-before">
+                                    <img src="../Images/Original/Request/aggrement.svg" alt="icons">
+                                </div>
+                                <h3 class="use-case-feat-head">Run a screening report for each tenant</h3>
+                            </div>
+                        </div>
+                        <div class="use-case-wrap wrap-50">
+                            <div class="use-case-wrap-items">
+                                <div class="image-before">
+                                    <img src="../Images/Original/Request/aggrement.svg" alt="icons">
+                                </div>
+                                <h3 class="use-case-feat-head">Run a screening report for each tenant</h3>
+                            </div>
+                        </div>
+                        <div class="use-case-wrap wrap-50">
+                            <div class="use-case-wrap-items">
+                                <div class="image-before">
+                                    <img src="../Images/Original/Request/aggrement.svg" alt="icons">
+                                </div>
+                                <h3 class="use-case-feat-head">Run a screening report for each tenant</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="help-center bg-center">
+                <img src="../Images/Original/Request/double-circle-bg.svg" alt="Double Bg">
+            </div>
+        </section>
+        <section class="p-r universal-forum-grid-container tms">
+            <div class="use-case-containers">
+                <div class="use-case-rows">
+                    <div class="use-case-wrap wrap-50"></div>
+                    <div class="use-case-wrap wrap-50">
+                        <div>
+                            <h3 class="use-case-feat-head header">Send a Notice</h3>
+                            <p class="tm-paragraph-wrap text-center">Sending a notice to a tenant or roommates is easy. You can schedule the Rent Increase or decrease, add utility, and other recurring invoicing, remind about outstanding balance or end a lease. Just select the related notice and send it out.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img width="663" height="727" src="../Images/Original/Request/dark-green-bg.svg" alt="background" class="use-case-image-responsive is-background-2">
+        </section>
+
         <!-- End Banners -->
 
         <!-- Start Footer -->

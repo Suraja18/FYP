@@ -37,6 +37,11 @@
     .ads-container {
         max-width: 1250px;
     }
+    .universal-forum-grid-container{
+        padding: 7rem 0;
+        padding-top: 7rem ;
+    }
+    
 }
 
 @media screen and (max-width: 1279px) {
@@ -105,7 +110,19 @@
         padding-right: 20px;
         padding-left: 20px;
     }
+    .universal-forum-grid-container{
+        padding: 5rem 0;
+    }
 }
+@media screen and (min-width: 1200px){
+    .header-panel-inner-wrapper{
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .info-grid-list{
+        grid-template-rows: repeat(4, 1fr);
+    }
+} 
 @media screen and (max-width: 1120px){
     .result-content-left{
         flex: none;
@@ -127,6 +144,11 @@
         flex: 0 1 200px;
         max-width: 250px;
     }
+    .universal-forum-grid-container{
+        padding: 4rem 0;
+        padding-top: 5rem ;
+    }
+    
 }
 
 @media screen and (max-width: 1024px){
@@ -150,6 +172,10 @@
         background-repeat: no-repeat;
         background-size: 278px auto;
     }
+    .universal-forum-grid-container{
+        padding: 3rem 0;
+        padding-top: 5rem ;
+    } 
 }
 
 @media screen and (max-width: 992px) {
@@ -585,9 +611,37 @@
         max-width: 80%;
         align-self: center;
     }
+    .use-case-image-right{
+        position: relative;
+        top: unset;
+        right: unset;
+    }
+    .universal-forum-grid-container{
+        padding: 2.5rem 0;
+        padding-top: 5rem;
+    } 
+    .use-case-feat-head.header{
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    .tm-paragraph-wrap{
+        font-size: 1.25rem;
+    }
     
 }
+@media screen and (max-width: 848px)  {
 
+    .p-r.not-mobile{
+        display: none;
+    }
+    .universal-forum-grid-container{
+        padding: 2.4rem 0;
+        padding-top: 5rem;
+    } 
+    .universal-grid-container{
+        grid-template-columns: repeat(2, 245px);
+    }
+}
 @media screen and (max-width: 768px) {
     .pr-5t {
         padding-right: 0;
@@ -1082,8 +1136,464 @@
     .maintainance-card .card-right-grid{
         z-index: 99;
     }
+    .request-btn-back{
+        padding: 10px 0;
+    }
+    .request-maintain-container{
+        width: 100%;
+        height: calc(100% - 52px);
+        padding: 0;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden; 
+    }
+    .all-wrapper-maintainance-req{
+        padding-right: 15px;
+        padding-left: 15px;
+        overflow-x: hidden;
+        background-color: #fff;
+    }
+    .wizard-header{
+        left: 0;
+        margin-left: 0;
+        padding-bottom: 20px;
+        padding: 20px 35px 30px;
+    }
+    .wizard-header.more-header{
+        background-color: var(--light-white);
+        position: sticky;
+        top: -1px;
+        z-index: 200;
+    }
+    .wizard-content .category-progress{
+        margin-top: 0;
+    }
+    .wizard-contents{
+        -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+        justify-content: normal;
+        display:-webkit-box;
+        display:-ms-flexbox;
+        padding: 1.5625rem 0;
+    }
+    .wizard-steps.active{
+        -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+        justify-content: normal;
+        min-height: calc(100vh - 220px);
+        padding: 0;
+    }
+    .wizard-titles{
+        margin-bottom: 2.375rem;
+    }
+    .wizard-rows-card:first-child{
+        padding-left: 0;
+    }
+    .wizard-rows-card{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .wizard-rows-card.sub-card{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .wizard-rows .wizard-radio{
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .wizard-radio-icons{
+        margin-bottom: 15px;
+        -webkit-box-shadow: 0 4px 4px #dae2ec;
+        box-shadow: 0 4px 4px #dae2ec;
+    }
+    .wizard-radio-icons::after{
+        width: 21px;
+        height: 21px;
+        right: -8px;
+        bottom: -8px;
+    }
+    .wizard-radio-title{
+        margin-bottom: 5px;
+        font-size: .98rem;
+        line-height: 1.45;
+    }
+    .wizard-radio-description{
+        display: none;
+    }
+    .for-mobile-m{
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .for-mobile-m .file-uploads .image-file-upload label{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .col-24.wizard-rows-75,
+    .col-24.wizard-rows-25{
+        padding-right: 0;
+        padding-left: 0;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .col-24.last-piority{
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .main-containers{
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
+    }
+    .mobile-panel-title{
+        font-size: 1.3rem;
+    }
+    .m-dots.req-btns:hover{
+        background-color: #fff;
+    }
+    .fixed-btns>span{
+        display: none;
+    }
+    .m-dots.req-btns{
+        padding: 0;
+        border: 0;
+    }
+    .upper-section-view-maintain .header-panel-maintain{
+        position: relative;
+        min-height: 52px;
+        border-bottom: 1px solid #dae2ec;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .upper-section-view-maintain .mobile-panel-title{
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        width: auto;
+    }
+    .panel-st{
+        display: none;
+    }
+    .is-header-all-wrappers.mob-nav{
+        overflow-y: unset;
+    }
+    .panel-left-wrap{
+        z-index: 10;
+        position: absolute; 
+        top: 50%; 
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .header-panel-body{
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .header-panel-body-row .is-header-req{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: 1fr auto;
+    }
+    .header-panel-body-row .is-header-content-req{
+        display: grid;
+        justify-items: start;
+        grid-row-gap: 15px; 
+    }
+    .badges-icons-hagtag{
+        height: 1.2rem;
+    }
+    .is-category-item-head{
+        font-size: 0.7rem;
+        order: 3;
+    }
+    .header-panel-body-row .badges-icons{
+        height: .7rem;
+    }
+    .header-panel-body-row .mobile-panel-title{
+        justify-content: start;
+    }
+    .header-panel-type{
+        font-size: 1.55rem;
+    }
+    .left-head-panel{
+        margin-left: auto;
+    }
+    .header-panep-type-des.desc{
+        display: none;
+    }
+    .header-panep-type-des.desc.for-mobe{
+        display: block;
+        margin-right: 5px;
+    }
+    .header-panel-stat{
+        border: 0 !important;
+    }
+    .header-panel-stat.cancelled::before{
+        height: 12px;
+        width: 12px;
+    }
+    .header-panel-stat{
+        padding: 0;
+        font-size: 1rem;
+    }
+    .stat-down-ar{
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .description.title-head{
+        font-size: .9rem;
+    }
+    .header-panel-body .header-panel-inner-wrap{
+        padding: 0;
+        grid-column-gap: unset;
+        grid-template-columns: unset; 
+    }
+    .req-footers{
+        text-align: center;
+    }
+    .status-change-options.not-mobile{
+        display: none !important;
+    }
+    .tenant-use-case-container .use-case-page-header{
+        padding: 50px 30px 200px;
+        padding-bottom: 260px;
+    }
+    .use-case-rows{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .use-case-containers{
+        padding-left: 15px;
+        padding-right: 15px;   
+    }
+    .use-case-wrap{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .use-case-header{
+        font-size: 1.6rem;
+    }
+    .use-case-heading{
+        line-height: 1;
+        font-size: 3rem
+    }
+    .use-case-paragraph{
+        padding: 5px 0 30px;
+        font-size: 1.125rem;
+    }
+    .tenant-use-case-container .use-case-page-header,
+    .tenant-use-case-container .use-case-page-header::before{
+        background-size: unset;
+    }
+    .tenant-use-case-container .use-case-page-header{
+        padding-bottom: 50px;
+    }
+    .image-for-mobile{
+        text-align: center;
+    }
+    .use-case-section-inner{
+        padding-top: 40px;
+    }
+    .use-case-section-title{
+        font-size: 1.94rem;
+    }
+    .use-case-section-description{
+        margin: 15px 0 30px;
+        font-size: 1.1rem;
+    }
+    .use-case-wrap-section-features{
+        margin-bottom: 20px;
+    }
+    .use-case-wrap-section-features::before,
+    .use-case-feature-image-container{
+        display: none;
+    }
+    .use-case-feature-paragraph{
+        font-size: 1.05rem;
+    }
+    .use-case-wrap.wrap-25{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .use-case-feat-for-mob{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .universal-forum-grid-container{
+        padding: 2.3rem 0;
+        padding-top: 5rem;
+    } 
+    .use-case-feat-head.header{
+        font-size: 1.75rem;
+    }
+    .universal-grid-container{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-gap: 14px;
+        grid-auto-rows: 240px;
+        margin: 0 auto;;
+    }
+    .tm-page-header{
+        padding: 120px 0 20px;
+    }
+    .use-case-header-desc{
+        text-align: center;
+    }
+    .tm-header-title{
+        font-size: 3rem;
+        margin: 0 0 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .tm-header-description{
+        font-size: 1.1rem;
+        margin-bottom: 28px;
+        text-align: center;
+        margin-top: 0;
+    }
+    .use-case-wrap.wrap-50 .text-right{
+        border-radius: 6px;
+        box-shadow: 0 2px 24px hsla(0,0%,8%,.1);
+        margin-top: 65px;
+        text-align: center;
+    }
+    .tm-paragraph-wrap{
+        font-size: 1.125rem;
+    }
+    .use-case-feat-head.header.tm{
+        margin-top: 20px;
+    }
+    .use-case-wrap-items{
+        margin-bottom: 36px;
+    }
+    .use-case-all-contain{
+        padding-top: 75px;
+    }
+    .help-center-paragraph{
+        font-size: 1rem;
+    }
+    .help-center-item:not(:last-child){
+        margin-right: 8px;
+    }
+    .help-center-qn-header{
+        font-size: 2rem;
+    }
+    .help-breadcrumb{
+        margin-top: 15px;
+    }
+    .breadcrumb-paragraph-help{
+        font-size: 1.12rem;
+    }
+    .help-center-ask-qn{
+        padding-top: 50px;
+        font-size: 1.125rem;
+    }
+    .help-sidebar{
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
 }
 
+@media screen and (min-width: 768px)  {
+    .header-panel-body-container{
+        padding: 20px 0 30px;
+    }
+    .header-panel-body-row{
+        display: grid;
+        grid-template-columns: auto minmax(0, max-content);
+        padding-right: 20px;
+    }
+    .header-panel-body-row .is-header-req{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .is-header-content-req{
+        padding: 0 55px;
+    }
+    .header-panel-body-row .is-header-content-req{
+        padding-right: 20px;
+    }
+    .badges-icons-hagtag{
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        line-height: 1;
+        height: 1.4rem;
+        align-items: center;
+    }
+    .left-head-panel{
+        display: none;
+    }
+    .info-grid-list{
+        display: grid;
+        grid-row-gap: 5px;
+    }
+    .info-grid-list-item{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-template-columns: 160px 1fr;
+    }
+    .use-case-wrap.wrap-75{
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+    .use-case-wrap.wrap-50{
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .use-case-wrap.wrap-37{
+        flex-basis: 37.5%;
+        max-width: 37.5%;
+    }
+    .use-case-wrap.wrap-25{
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+    .use-case-wrap.wrap-66{
+        flex-basis: 66.67%;
+        max-width: 66.67%;
+    }
+    .use-case-wrap.wrap-33{
+        flex-basis: 33.33%;
+        max-width: 33.33%;
+    }
+    .use-case-paragraph{
+        padding-right: 130px;
+    }
+    .use-case-lists{
+        justify-content: center;
+    }
+    .use-case-wrap-section-features{
+        margin-bottom: 42px;
+        padding: 0 10px 0 80px;
+    }
+    .use-case-feature-header{
+        font-size: 1.6rem;
+    }
+    .tm-page-header{
+        padding: 40px 0 65px;
+        min-height: 50vh;
+    }
+    .m-button.btn-Primary.is-new{
+        margin-top: 20px;
+    }
+    .help-sidebar{
+        background-color: #fff;
+        box-shadow: 0 7px 22px rgba(0,0,0,.07);
+        margin-bottom: 75px;
+        position: sticky;
+        top: 100px;
+    }
+}
 @media screen and (max-width: 600px){
     .p5 {
         padding: 2.25rem;
@@ -1151,6 +1661,10 @@
     .text-small-for-mobile{
         font-size: .95rem;
     }
+    .universal-forum-grid-container{
+        padding: 2.1rem 0;
+        padding-top: 5rem;
+    } 
 }
 
 @media screen and (max-width: 576px){
@@ -1173,7 +1687,20 @@
     .text-small-for-mobile{
         font-size: .9rem;
     }
-    
+    .use-case-image-responsive.for-mobile,
+    .use-case-image-responsive.for-mob{
+        display: block !important;
+    }
+    .use-case-image-responsive{
+        display: none;
+    }
+    .universal-forum-grid-container{
+        padding: 2rem 0;
+        padding-top: 5rem;
+    }
+    .universal-grid-container{
+        grid-template-columns: 1fr;
+    }
     
 }
 @media screen and (max-width: 480px) {
@@ -1493,7 +2020,21 @@
         grid-row-gap: 2.5rem;
         grid-template-columns: 1fr;
     }
-    
+    .tenant-use-case-container .use-case-page-header::before{
+        background-image: url(../Images/Original/Request/darkbackgrounddownload.svg);
+        background-size: 100%, cover;
+    }
+    .use-case-image-responsive.is-background{
+        display: none;
+    }
+    .use-case-wrap.wrap-25{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .universal-forum-grid-container{
+        padding: 1.75rem 0;
+        padding-top: 5rem
+    } 
 }
 
 @media screen and (min-width: 992px) and (max-width: 1079px) {

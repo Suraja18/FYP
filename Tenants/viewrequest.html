@@ -580,305 +580,316 @@
                             <a href="index.html" class="banner-link-for-header">Home</a>
                         </li>
                         <li class="banner-header-name">
-                            /<span class="banner-link-for-header for-normal">Maintainance Request</span>
+                            /<a href="maintainance.html" class="banner-link-for-header"> Maintainance Request</a>
+                        </li>
+                        <li class="banner-header-name">
+                            /<span class="banner-link-for-header for-normal">#1234</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="is-header-all-wrappers">
-                <div class="is-header-all-wrappers">
+            <div class="is-header-all-wrappers mob-nav">
+                <div class="is-header-all-wrappers mob-nav">
                     <div>
-                        <h2 class="header-f0r-mobile text-center">Maintainance Request</h2>
-                        <div class="is-header-all-wrappers padding">
-                            <div class="is-header-all-container padding">
-                                <header class="header-u-flex">
-                                    <div class="header-left-side-wrap">
-                                        <div class="header-left-title">Maintainance Request</div>
-                                        <p>0 Total</p>
-                                    </div>
-                                    <div class="header-right-side-wrap">
-                                        <a href="newrequest.html" class="is-button-for-edit-profile add-icons">
-                                            Add request 
-                                        </a>
-                                    </div>
-                                </header>
-                                <div class="status-maintainance">
-                                    <div class="status-maintainance-container">
-                                        <div class="status-filter-search for-mobile">
-                                            <input type="text" autocomplete="off" placeholder="Search here..." class="filter-search-input">
-                                        </div>
-                                        <div class="status-filter">
-                                            <div class="status-filter-search for-desktop">
-                                                <input type="text" autocomplete="off" placeholder="Search here..." class="filter-search-input">
+                        <div class="main-containers">
+                            <div>
+                                <div class="is-header-all-wrappers mob-nav">
+                                    <div class="upper-section-view-maintain">
+                                        <header class="header-panel-maintain is-header-req">
+                                            <div style="display: block; margin-right: 10px;">
+                                                <a href="maintainance.html" class="btn-back">
+                                                    <img src="../Images/Original/Request/leftArrow-purple.svg" alt="left-back-btn" class="left-back-btn">
+                                                </a>
                                             </div>
-                                            <div class="status-filter-wrappers p-r">
-                                                <div class="status-filter-container-list" id="statusFullWrapper">
-                                                    <button type="button" class="button-close-for-filter"></button>
-                                                    <div class="filter-inside-text" id="insideTheBox">
-                                                        <span class="mr-5p">Status</span>
-                                                        <!-- <span class="status-filters fw-600">In Progress</span> -->
-                                                    </div>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="15" width="28" viewBox="0 0 320 512"><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
-                                                </div>
-                                                <div class="status-other-option-container" id="statusFullOption">
-                                                    <div class="status-other-option-wrapper">
-                                                        <div class="popup-header">
-                                                            <h3 class="popup-header-text">Status</h3>
-                                                        </div>
-                                                        <div class="pb-10p">
-                                                            <div class="popup-content">
-                                                                <div>
-                                                                    <select class="multi-scroll" placeholder="Status" id="multiScrollSelect">
-                                                                        <option value="New">New</option>
-                                                                        <option value="In Progress">In Progress</option>
-                                                                        <option value="Cancelled">Cancelled</option>
-                                                                        <option value="Completed">Completed</option>
-                                                                    </select>
+                                            <h2 class="mobile-panel-title">Maintainance Request</h2>
+                                            <div class="panel-left-wrap">
+                                                <div class="panel-left-wrapper">
+                                                    <div class="panel-controller">
+                                                        <div class="panel-left-wrapper">
+                                                            <div class="panel-st p-r">
+                                                                <button type="button" class="m-button btn-Primary " id="sectionChangeOptionsUhead">Change Status</button>
+                                                                <div class="status-change-options not-mobile" id="sectionChangeOptionsUbody">
+                                                                    <div class="status-change-options-container">
+                                                                        <h3 class="status-change-options-upper-head">
+                                                                            Change status 
+                                                                        </h3>
+                                                                        <section class="status-change-options-upper-body">
+                                                                            <p class="status-change-options-description"> Here you can change the current status to another. </p>
+                                                                            <div class="popup-content">
+                                                                                <div>
+                                                                                    <select class="multi-scroll" placeholder="Status" id="multiScrollSelect">
+                                                                                        <option value="New">New</option>
+                                                                                        <option value="In Progress">In Progress</option>
+                                                                                        <option value="Cancelled">Cancelled</option>
+                                                                                        <option value="Completed">Completed</option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </section>
+                                                                        <footer class="status-change-options-footer">
+                                                                            <div class="status-change-option-footer">
+                                                                                <button type="button" class="m-button btn-cancel mr-20p" id="btnCancelled">Cancel</button>
+                                                                                <button type="submit" class="m-button btn-Primary">Change</button>
+                                                                            </div>
+                                                                        </footer>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="popup-footer">
-                                                            <button class="is-button-for-edit-profile btn-Primary" id="statusApply">Apply</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="status-filter-wrappers status-links status-tick" id="successStatusChange" style="display: none;"> Save filters </div><!-- This show on successfully Applied -->
-                                            
-                                        </div>
-                                    </div>
-                                </div>
+                                                            <div>
+                                                                <div class="m-dots req-btns">
+                                                                    <button type="button" class="fixed-btns" id="fixMoreButton">
+                                                                        <span>Actions</span>
+                                                                        <div>
+                                                                            <img src="../Images/Original/Icons/more.svg" class="left-back-btn">
+                                                                        </div>
+                                                                    </button>
+                                                                    <div class="m-dots-popover is-pa" id="mDotsPopUp">
+                                                                        <div class="wrapper-for-box-size">
+                                                                            <ul class="list-unstyle">
+                                                                                <li class="m-dot-item edit" role="listitem">
+                                                                                    <a href="../Errors/404Error.html" class="m-dot-links"> Edit</a>
+                                                                                </li>   
+                                                                                <li class="m-dot-item" role="listitem">
+                                                                                    <a href="../Errors/404Error.html" class="m-dot-links"> Print</a>
+                                                                                </li>   
+                                                                                <li class="m-dot-item delete" role="listitem">
+                                                                                    <a href="../Errors/404Error.html" class="m-dot-links"> Delete</a>
+                                                                                </li>   
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-                                <div class="maintainance-request-grid">
-                                    <div class="maintainance-grid-column">
-                                        <div role="list">
-                                            <div role="listitem">
-                                                <div class="maintainance-card card-horizontal">
-                                                    <div class="card-extra-content">
-                                                        <div class="extra-card-id">#1234</div>
-                                                    </div>
-                                                    <div class="card-title card-title-box">
-                                                        <div class="maintenance-list-item-title">
-                                                            Electrical / Communication / Internet / Not working 
                                                         </div>
                                                     </div>
-                                                    <div class="card-left-part">
-                                                        <div class="card-status-checked card-cancelled">Cancelled</div>
-                                                    </div>
-                                                    <div class="card-avatar-icons">
-                                                        <div>
-                                                            <div class="avatar-profile-imgs">
-                                                                <div class="avatar-info-profile">
-                                                                    <div href="#" class="avatar-info-profile-imgs">
-                                                                        <div class="profile-avatar-img">
-                                                                            <div class="profile-avatar-img-wrapper">
-                                                                                <div class="profile-avatar-image profile-avatar-no-img">T</div>
-                                                                                <!-- <img src="../Images/Original/Banner-2.png" class="profile-avatar-image" alt=""> -->
-                                                                            </div>
+                                                </div>
+                                            </div>
+                                        </header>
+                                        <div class="header-panel-body">
+                                            <div class="header-panel-body-container">
+                                                <div class="header-panel-body-row">
+                                                    <div>
+                                                        <div class="is-header-req">
+                                                            <h2 class="mobile-panel-title">
+                                                                <img src="../Images/Original/Request/hagtag.svg" alt="hagtag" class="badges-icons-hagtag">
+                                                                No. <span>1234</span>
+                                                            </h2>
+                                                            <div class="left-head-panel">
+                                                                <div class="p-r">
+                                                                    <button type="button" class="btn-panel-stat" id="btnStatusClicked">
+                                                                        <div class="header-panep-type-des desc for-mobe">
+                                                                            <p class="header-panel-stat cancelled"><span>Cancelled</span></p>
+                                                                        </div>
+                                                                        <img src="../Images/Original/downArrow.svg" class="stat-down-ar" alt="downARrow">
+                                                                    </button>
+                                                                    <div class="status-change-options" id="sectionChangeOptionsUpperbody">
+                                                                        <div class="status-change-options-container">
+                                                                            <h3 class="status-change-options-upper-head">
+                                                                                Change status 
+                                                                            </h3>
+                                                                            <section class="status-change-options-upper-body">
+                                                                                <p class="status-change-options-description"> Here you can change the current status to another. </p>
+                                                                                <div class="popup-content">
+                                                                                    <div>
+                                                                                        <select class="multi-scroll" placeholder="Status" id="multiScrollSelect">
+                                                                                            <option value="New">New</option>
+                                                                                            <option value="In Progress">In Progress</option>
+                                                                                            <option value="Cancelled">Cancelled</option>
+                                                                                            <option value="Completed">Completed</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </section>
+                                                                            <footer class="status-change-options-footer">
+                                                                                <div class="status-change-option-footer">
+                                                                                    <button type="button" class="m-button btn-cancel mr-20p" id="btnCancel">Cancel</button>
+                                                                                    <button type="submit" class="m-button btn-Primary">Change</button>
+                                                                                </div>
+                                                                            </footer>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="card-address-description">
-                                                        <div id="cardAddressDescription">
-                                                            <div class="maintenance-list-item-title">ZX Ranch Rd</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-maintainance-hurry">
-                                                        <div class="card-maint">
-                                                            Normal
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-view-btn">
-                                                        <a href="viewrequest.html" class="status-links view-btn">View</a>
-                                                    </div>
-                                                    <div class="card-right-grid">
-                                                        <div class="d-flex p-r">
-                                                            <div class="d-print-icon"></div>
-                                                            <div>
-                                                                <div id="moreIcons">
-                                                                    <button type="button" role="button" class="btn-more-option">
-                                                                        <div class="btn-icons-more"></div>
-                                                                    </button>
-                                                                </div>
+                                                        <div class="is-header-content-req">
+                                                            <div style="display: grid; justify-content: start;">
+                                                                <p class="is-category-item-head">
+                                                                    <img src="../Images/Original/Request/droplet.svg" alt="droplet" class="badges-icons">
+                                                                    <span>Plumbing / Sprinklers / Leaking pipe / Leaking spot</span>
+                                                                </p>
                                                             </div>
-                                                            <div class="more-info-for-maintainance">
-                                                                <div class="p-10p">
-                                                                    <div class="btn-container-opt below">
-                                                                        <a href="../Errors/404Error.html" class="upper-btn">Print</a>
-                                                                    </div>
-                                                                    <div class="btn-container-opt">
-                                                                        <a href="../Errors/404Error.html" class="lower-btn">Delete</a>
-                                                                    </div>
+                                                            <div class="header-panel-type">
+                                                                <p class="header-panep-type-des"> Plumbing / Sprinklers / Leaking pipe / Leaking spot </p>
+                                                                <div class="header-panep-type-des desc">
+                                                                    <p class="header-panel-stat cancelled"><span>Cancelled</span></p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div role="listitem">
-                                                <div class="maintainance-card card-horizontal">
-                                                    <div class="card-extra-content">
-                                                        <div class="extra-card-id">#1234</div>
+                                                <section>
+                                                    <div class="is-header-req mb-20px">
+                                                        <h2 class="mobile-panel-title">
+                                                            <img src="../Images/Original/Request/housewind.svg" alt="hagtag" class="badges-icons-hagtag">
+                                                            <span>Property</span>
+                                                        </h2>
                                                     </div>
-                                                    <div class="card-title card-title-box">
-                                                        <div class="maintenance-list-item-title">
-                                                            Electrical / Communication / Internet / Not working 
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-left-part">
-                                                        <div class="card-status-checked card-in-progress">In Progress</div>
-                                                    </div>
-                                                    <div class="card-avatar-icons">
+                                                    <div class="is-header-content-req mb-20px">
                                                         <div>
-                                                            <div class="avatar-profile-imgs">
-                                                                <div class="avatar-info-profile">
-                                                                    <div href="#" class="avatar-info-profile-imgs">
-                                                                        <div class="profile-avatar-img">
-                                                                            <div class="profile-avatar-img-wrapper">
-                                                                                <div class="profile-avatar-image profile-avatar-no-img">T</div>
-                                                                                <!-- <img src="../Images/Original/Banner-2.png" class="profile-avatar-image" alt=""> -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
+                                                            <div class="property-address-card">
+                                                                <button type="button" class="address-btns">
+                                                                    <div class="avatar-home-icons"></div>
+                                                                    <span> ZX Ranch Rd </span>
+                                                                </button>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="card-address-description">
-                                                        <div id="cardAddressDescription">
-                                                            <div class="maintenance-list-item-title">ZX Ranch Rd</div>
+                                                    <div class="is-header-content-req">
+                                                        <h4 class="desc-title-head">Description</h4>
+                                                        <div>
+                                                            <div class="description title-head">........</div>
                                                         </div>
                                                     </div>
-                                                    <div class="card-maintainance-hurry">
-                                                        <div class="card-maint">
-                                                            Normal
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-view-btn">
-                                                        <a href="../Errors/404Error.html" class="status-links view-btn">View</a>
-                                                    </div>
-                                                    <div class="card-right-grid">
-                                                        <div class="d-flex p-r">
-                                                            <div class="d-print-icon"></div>
-                                                            <div>
-                                                                <div id="moreIcons">
-                                                                    <button type="button" role="button" class="btn-more-option">
-                                                                        <div class="btn-icons-more"></div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="more-info-for-maintainance">
-                                                                <div class="p-10p">
-                                                                    <div class="btn-container-opt below">
-                                                                        <a href="../Errors/404Error.html" class="upper-btn">Print</a>
-                                                                    </div>
-                                                                    <div class="btn-container-opt">
-                                                                        <a href="../Errors/404Error.html" class="lower-btn">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="is-header-all-wrappers mob-nav">
+                                    <div class="upper-section-view-maintain">
+                                        <header class="header-panel-maintain is-header-req">
+                                            <div style="display: block; margin-right: 10px;">
+                                                <div class="btn-back">
+                                                    <img src="../Images/Original/Request/useroutlet.svg" alt="left-back-btn" class="left-back-btn">
                                                 </div>
                                             </div>
-                                            <div role="listitem">
-                                                <div class="maintainance-card card-horizontal">
-                                                    <div class="card-extra-content">
-                                                        <div class="extra-card-id">#1234</div>
-                                                    </div>
-                                                    <div class="card-title card-title-box">
-                                                        <div class="maintenance-list-item-title">
-                                                            Electrical / Communication / Internet / Not working 
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-left-part">
-                                                        <div class="card-status-checked card-resolved">Resolved</div>
-                                                    </div>
-                                                    <div class="card-avatar-icons">
-                                                        <div>
-                                                            <div class="avatar-profile-imgs">
-                                                                <div class="avatar-info-profile">
-                                                                    <div href="#" class="avatar-info-profile-imgs">
-                                                                        <div class="profile-avatar-img">
-                                                                            <div class="profile-avatar-img-wrapper">
-                                                                                <div class="profile-avatar-image profile-avatar-no-img">T</div>
-                                                                                <!-- <img src="../Images/Original/Banner-2.png" class="profile-avatar-image" alt=""> -->
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-address-description">
-                                                        <div id="cardAddressDescription">
-                                                            <div class="maintenance-list-item-title">ZX Ranch Rd</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-maintainance-hurry">
-                                                        <div class="card-maint">
-                                                            Urgent
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-view-btn">
-                                                        <a href="../Errors/404Error.html" class="status-links view-btn">View</a>
-                                                    </div>
-                                                    <div class="card-right-grid">
-                                                        <div class="d-flex p-r">
-                                                            <div class="d-print-icon"></div>
-                                                            <div>
-                                                                <div id="moreIcons">
-                                                                    <button type="button" role="button" class="btn-more-option">
-                                                                        <div class="btn-icons-more"></div>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="more-info-for-maintainance">
-                                                                <div class="p-10p">
-                                                                    <div class="btn-container-opt below">
-                                                                        <a href="../Errors/404Error.html" class="upper-btn">Print</a>
-                                                                    </div>
-                                                                    <div class="btn-container-opt">
-                                                                        <a href="../Errors/404Error.html" class="lower-btn">Delete</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            <h2 class="mobile-panel-title">Request Information</h2>
+                                            <span class="mobile-panel-sub-title">(Details)</span>
+                                        </header>
+                                        <div class="header-panel-body">
+                                            <div class="header-panel-inner-wrap">
+                                                <div class="header-panel-inner-wrapper">
+                                                    <ul class="info-grid-list">
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Priority :</p>
+                                                            <p class="info-grid-items">Critical</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Date initiated :</p>
+                                                            <p class="info-grid-items">Mar 19, 2024</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Date due :</p>
+                                                            <p class="info-grid-items">Mar 23, 2024</p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="info-grid-list">
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Started work :</p>
+                                                            <p class="info-grid-items">Mar 20, 2024</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Ended work :</p>
+                                                            <p class="info-grid-items">Mar 22, 2024</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Labor time :</p>
+                                                            <p class="info-grid-items">8 hrs</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Key Returned :</p>
+                                                            <p class="info-grid-items">Yes</p>
+                                                        </li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div>
+                                <div class="is-header-all-wrappers mob-nav">
+                                    <div class="upper-section-view-maintain">
+                                        <header class="header-panel-maintain is-header-req">
+                                            <div style="display: block; margin-right: 10px;">
+                                                <div class="btn-back">
+                                                    <img src="../Images/Original/Request/stat.svg" alt="left-back-btn" class="left-back-btn">
+                                                </div>
+                                            </div>
+                                            <h2 class="mobile-panel-title">Tenants Information</h2>
+                                            <span class="mobile-panel-sub-title">(Details)</span>
+                                        </header>
+                                        <div class="header-panel-body">
+                                            <div class="header-panel-inner-wrap">
+                                                <div class="header-panel-inner-wrapper">
+                                                    <ul class="info-grid-list">
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Name :</p>
+                                                            <p class="info-grid-items">Abc</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Address :</p>
+                                                            <p class="info-grid-items">Rupalake</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Contact :</p>
+                                                            <p class="info-grid-items">+977 9800000000</p>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="info-grid-list">
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Availability Time 1 :</p>
+                                                            <p class="info-grid-items">3:20 PM</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Availability Time 2 :</p>
+                                                            <p class="info-grid-items">---</p>
+                                                        </li>
+                                                        <li class="info-grid-list-item">
+                                                            <p style="font-weight: 600;" class="info-grid-items">Availability Time 3 :</p>
+                                                            <p class="info-grid-items">---</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="is-header-all-wrappers mob-nav">
+                                    <div class="upper-section-view-maintain">
+                                        <header class="header-panel-maintain is-header-req">
+                                            <div style="display: block; margin-right: 10px;">
+                                                <div class="btn-back">
+                                                    <img src="../Images/Original/Request/paperclip.svg" alt="left-back-btn" class="left-back-btn">
+                                                </div>
+                                            </div>
+                                            <h2 class="mobile-panel-title">Attachments</h2>
+                                            <span class="mobile-panel-sub-title">(0 records)</span>
+                                        </header>
+                                        <div class="header-panel-body">
+                                            <div class="header-panel-inner-wrap">
+                                                <!-- if there is no image -->
+                                                <div class="text-center">
+                                                    <p class="text-center">No Attachments Yet</p>
+                                                    <p class="text-center">When files are added, they will appear here.</p>
+                                                </div>
+                                                <!--End if there is no image -->
 
-                                <!-- WHen There is No Request -->
-                                <div class="placeholder no-request">
-                                    <div class="placeholder-container">
-                                        <div class="placeholder-grid opacity-low">
-                                            <ul class="loading-req">
-                                                <li class="placeholder-card">
-                                                    <span class="placeholder-bar-progress"></span>
-                                                </li>
-                                                <li class="placeholder-card">
-                                                    <span class="placeholder-bar-progress"></span>
-                                                </li>
-                                            </ul>
-                                            <div class="placeholder-grid no-req">
-                                                <svg height="35" width="35" class="mb-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                                    <path d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z" fill="#3d3975"/>
-                                                </svg>
-                                                <div class="placeholder-sub-header">
-                                                    No requests
-                                                </div>
-                                                <p class="paragraph text-center text-small-for-mobile"> You can submit a maintenance request if you have a connection with Landlord and shared lease. </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- End of WHen There is No Request -->
+                            </div>
+                            <div>
+                                <div class="req-footers">
+                                    <span class="color-navy">Created by Test on</span>
+                                    <span class="color-navy">Mar 19, 2024</span>
+                                </div>
                             </div>
                         </div>
                     </div>
