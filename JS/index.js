@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const avatarButtonOpen = document.getElementById('profileAvatarButton');
     const avatarProfileOpen = document.getElementById('profileAvatarOpen');
     if (avatarButtonOpen && avatarProfileOpen) {
-        avatarButtonOpen.addEventListener('click', function() {
+        avatarButtonOpen.addEventListener('click', function () {
             avatarProfileOpen.classList.toggle('active');
         });
     }
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     btnMaintainanceIcons.forEach((btnMaintainanceIcon, index) => {
         const btnMaintainanceIconOption = btnMaintainanceIconOptions[index];
-        btnMaintainanceIcon.addEventListener('click', function() {
+        btnMaintainanceIcon.addEventListener('click', function () {
             btnMaintainanceIconOption.classList.toggle('active');
         });
     });
@@ -295,20 +295,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const statusFullOption = document.getElementById('statusFullOption');
 
     if (statusFullWrapper && statusFullOption) {
-        statusFullWrapper.addEventListener('click', function() {
+        statusFullWrapper.addEventListener('click', function () {
             statusFullOption.classList.toggle('active');
         });
-        document.getElementById('statusApply').addEventListener('click', function() {
+        document.getElementById('statusApply').addEventListener('click', function () {
             var selectedStatus = document.getElementById('multiScrollSelect').value;
             var statusSpan = document.getElementById('insideTheBox');
             statusSpan.innerHTML = '<span class="mr-5p">Status</span><span class="status-filters fw-600">' + selectedStatus + '</span>';
             var successMessage = document.getElementById('successStatusChange');
             successMessage.style.display = 'block';
-            setTimeout(function() {
+            setTimeout(function () {
                 successMessage.style.display = 'none';
             }, 5 * 60 * 1000);
         });
-        
+
     }
 
 
@@ -321,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const svg2 = '<svg xmlns="http://www.w3.org/2000/svg" height="28" width="35" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>';
         let toggle = false;
 
-        navMoreButton.addEventListener('click', function() {
+        navMoreButton.addEventListener('click', function () {
             toggle = !toggle;
             if (toggle) {
                 navMoreButton.innerHTML = svg2 + '<p class="small-text">More</p>';
@@ -334,13 +334,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    
+
     //Maintainance Request
 
     const categoryRadios = document.querySelectorAll('input[type="radio"][name^="115"]');
 
-    if(categoryRadios){
-        categoryRadios.forEach(function(radio) {
+    if (categoryRadios) {
+        categoryRadios.forEach(function (radio) {
             const secondCategoryLists = document.querySelector('.wizard-steps.is-second');
             const thirdCategoryLists = document.querySelector('.wizard-steps.is-third');
             const lastCategoryLists = document.querySelector('.wizard-steps.is-fourth');
@@ -358,72 +358,72 @@ document.addEventListener("DOMContentLoaded", function () {
             const subFormCategoryLists = document.querySelectorAll('.sub-form-category-list.is-sec');
             const subFormSubCategoryLists = document.querySelectorAll('.sub-form-category-list.is-third');
             const subFormLastCategoryLists = document.querySelectorAll('.sub-form-category-list.is-ls');
-            radio.addEventListener('change', function() {
+            radio.addEventListener('change', function () {
                 const selectedCategory = this.id.replace('category', '').toLowerCase();
-                
-                subFormCategoryLists.forEach(function(subForm) {
+
+                subFormCategoryLists.forEach(function (subForm) {
                     if (subForm.classList.contains(`is-${selectedCategory}`)) {
                         subForm.classList.add('active');
                         secondCategoryLists.classList.add('active');
-                        secondCategoryLists.scrollIntoView({behavior: "smooth" });
+                        secondCategoryLists.scrollIntoView({ behavior: "smooth" });
                         const subcategoryRadios = document.querySelectorAll('input[type="radio"][name^="116"]');
-                        subcategoryRadios.forEach(function(radio1) {
+                        subcategoryRadios.forEach(function (radio1) {
                             thirdCategoryLists.classList.remove('active');
                             lastCategoryLists.classList.remove('active');
                             wizardStepImage.classList.remove('active');
                             wizardStepDescription.classList.remove('active');
                             wizardStepAddress.classList.remove('active');
                             wizardStepPiority.classList.remove('active');
-                            radio1.addEventListener('change', function() {
+                            radio1.addEventListener('change', function () {
                                 const selectedSubCategory = this.id.replace('category', '').toLowerCase();
-                                subFormSubCategoryLists.forEach(function(subForm1) {
+                                subFormSubCategoryLists.forEach(function (subForm1) {
                                     if (subForm1.classList.contains(`is-${selectedSubCategory}`)) {
                                         thirdCategoryLists.classList.add('active');;
                                         subForm1.classList.add('active');
-                                        thirdCategoryLists.scrollIntoView({behavior: "smooth" });
+                                        thirdCategoryLists.scrollIntoView({ behavior: "smooth" });
                                         const thirdCategoryRadios = document.querySelectorAll('input[type="radio"][name^="117"]');
-                                        thirdCategoryRadios.forEach(function(radio2){
+                                        thirdCategoryRadios.forEach(function (radio2) {
                                             lastCategoryLists.classList.remove('active');
                                             wizardStepImage.classList.remove('active');
                                             wizardStepDescription.classList.remove('active');
                                             wizardStepAddress.classList.remove('active');
                                             wizardStepPiority.classList.remove('active');
-                                            radio2.addEventListener('change', function() {
+                                            radio2.addEventListener('change', function () {
                                                 const selectedThirdCategory = this.id.replace('category', '').toLowerCase();
-                                                subFormLastCategoryLists.forEach(function(subForm2) {
+                                                subFormLastCategoryLists.forEach(function (subForm2) {
                                                     if (subForm2.classList.contains(`is-${selectedThirdCategory}`)) {
                                                         lastCategoryLists.classList.add('active');;
                                                         subForm2.classList.add('active');
-                                                        lastCategoryLists.scrollIntoView({behavior: "smooth" });
+                                                        lastCategoryLists.scrollIntoView({ behavior: "smooth" });
                                                         const forthCategoryRadios = document.querySelectorAll('input[type="radio"][name^="lastdetail"]');
-                                                        forthCategoryRadios.forEach(function(radio3){
+                                                        forthCategoryRadios.forEach(function (radio3) {
                                                             wizardStepDescription.classList.remove('active');
                                                             wizardStepAddress.classList.remove('active');
                                                             wizardStepPiority.classList.remove('active');
-                                                            radio3.addEventListener('change', function() {
+                                                            radio3.addEventListener('change', function () {
                                                                 wizardStepImage.classList.add('active');
-                                                                wizardStepImage.scrollIntoView({behavior: "smooth" });
-                                                                const nextBtnForReq =  document.getElementById("nextBtnForReq");
-                                                                nextBtnForReq.addEventListener('click', function(){ 
+                                                                wizardStepImage.scrollIntoView({ behavior: "smooth" });
+                                                                const nextBtnForReq = document.getElementById("nextBtnForReq");
+                                                                nextBtnForReq.addEventListener('click', function () {
                                                                     wizardStepDescription.classList.add('active');
-                                                                    wizardStepDescription.scrollIntoView({behavior: "smooth" });
+                                                                    wizardStepDescription.scrollIntoView({ behavior: "smooth" });
                                                                     wizardStepAddress.classList.remove('active');
                                                                     wizardStepPiority.classList.remove('active');
-                                                                    const continueBtnForReq =  document.getElementById("continueBtnForReq");
-                                                                    continueBtnForReq.addEventListener('click', function(){ 
+                                                                    const continueBtnForReq = document.getElementById("continueBtnForReq");
+                                                                    continueBtnForReq.addEventListener('click', function () {
                                                                         wizardStepAddress.classList.add('active');
-                                                                        wizardStepAddress.scrollIntoView({behavior: "smooth" });
+                                                                        wizardStepAddress.scrollIntoView({ behavior: "smooth" });
                                                                         wizardStepPiority.classList.remove('active');
-                                                                        const nextBtnForLocation =  document.getElementById("nextBtnForLocation");
-                                                                        nextBtnForLocation.addEventListener('click', function(){ 
+                                                                        const nextBtnForLocation = document.getElementById("nextBtnForLocation");
+                                                                        nextBtnForLocation.addEventListener('click', function () {
                                                                             wizardStepPiority.classList.add('active');
-                                                                            wizardStepPiority.scrollIntoView({behavior: "smooth" });
+                                                                            wizardStepPiority.scrollIntoView({ behavior: "smooth" });
                                                                         });
                                                                     });
                                                                 });
                                                             });
                                                         });
-                                                    }else{
+                                                    } else {
                                                         subForm2.classList.remove('active');
                                                     }
                                                 });
@@ -444,12 +444,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    //Show More
+    //Show More 
     const fixMoreButton = document.getElementById('fixMoreButton');
     const mDotsPopUp = document.getElementById('mDotsPopUp');
 
-    if(fixMoreButton && mDotsPopUp){
-        fixMoreButton.addEventListener("click", function() {
+    if (fixMoreButton && mDotsPopUp) {
+        fixMoreButton.addEventListener("click", function () {
             mDotsPopUp.classList.toggle('active');
         });
     }
@@ -460,12 +460,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const sectionChangeOptionsUhead = document.getElementById('sectionChangeOptionsUhead');
     const sectionChangeOptionsUbody = document.getElementById('sectionChangeOptionsUbody');
 
-    if(sectionChangeOptionsUhead && sectionChangeOptionsUbody){
+    if (sectionChangeOptionsUhead && sectionChangeOptionsUbody) {
         const btnCancelled = document.getElementById('btnCancelled');
-        sectionChangeOptionsUhead.addEventListener("click", function() {
+        sectionChangeOptionsUhead.addEventListener("click", function () {
             sectionChangeOptionsUbody.classList.toggle('active');
         });
-        btnCancelled.addEventListener("click", function() {
+        btnCancelled.addEventListener("click", function () {
             sectionChangeOptionsUbody.classList.remove('active');
         });
 
@@ -473,29 +473,79 @@ document.addEventListener("DOMContentLoaded", function () {
     const btnStatusClicked = document.getElementById('btnStatusClicked');
     const sectionChangeOptionsUpperbody = document.getElementById('sectionChangeOptionsUpperbody');
 
-    if(btnStatusClicked && sectionChangeOptionsUpperbody){
+    if (btnStatusClicked && sectionChangeOptionsUpperbody) {
         const btnCancel = document.getElementById('btnCancel');
-        btnStatusClicked.addEventListener("click", function() {
+        btnStatusClicked.addEventListener("click", function () {
             sectionChangeOptionsUpperbody.classList.toggle('active');
         });
-        btnCancel.addEventListener("click", function() {
+        btnCancel.addEventListener("click", function () {
             sectionChangeOptionsUpperbody.classList.remove('active');
         });
 
     }
 
 
-    $(document).ready(function() {
-        $('.help-center-item input[type="radio"]').on('change', function() {
+    $(document).ready(function () {
+        $('.help-center-item input[type="radio"]').on('change', function () {
             var target = $(this).attr('id').replace('Role', 'HelpCenter');
             $('#' + target).addClass('active').siblings('section').removeClass('active');
         });
     });
+
+
+
+    //Now For Landlord Sidebar dropdown
+
+    function DropdownToggle(dropdownId, arrowId, containerId) {
+        const dropdownSidebarClick = document.getElementById(dropdownId);
+        if (dropdownSidebarClick) {
+            const sidebarDownArrow = document.getElementById(arrowId);
+            const sidebarContainer = document.getElementById(containerId);
+            dropdownSidebarClick.addEventListener("click", function () {
+                sidebarDownArrow.classList.toggle('rotate180');
+                sidebarContainer.classList.toggle('active');
+            });
+        }
+    }
+    DropdownToggle('dropdownmaintenance', 'expandArrow-maintenance', 'sidebarDropdown-maintenance');
+    DropdownToggle('dropdownproperty', 'expandArrow-property', 'sidebarDropdown-property');
+    DropdownToggle('dropdownpropertyoccupant', 'expandArrow-propertyoccupant', 'sidebarDropdown-propertyoccupant');
+    DropdownToggle('dropdowntenants', 'expandArrow-tenants', 'sidebarDropdown-tenants');
+    DropdownToggle('dropdownreport', 'expandArrow-report', 'sidebarDropdown-report');
+
+
+    //More Click for Landlord
+    const appSidebar = document.getElementById('appSidebar');
+    const specialContainer = document.getElementById('landlordBody');
+    if (appSidebar && specialContainer) {
+        const viewMoreLinks = this.getElementById('viewMoreLinks');
+        viewMoreLinks.addEventListener("click", function () {
+            appSidebar.classList.toggle('menu-click');
+            specialContainer.classList.toggle('menu-click');
+        });
+    }
+
+
+
+    //For Notifications
+    const notifyButtons = document.getElementById('notifyButtons');
+    const notifyCOntainers = document.getElementById('notifyCOntainers');
+    if(notifyButtons && notifyCOntainers){
+        notifyButtons.addEventListener('click',function(){
+            notifyCOntainers.classList.toggle('active');
+        });
+    } 
+
 });
 
 
 
 
+
+
+
+
+// External Js
 
 
 

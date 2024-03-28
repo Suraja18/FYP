@@ -122,6 +122,11 @@
     .info-grid-list{
         grid-template-rows: repeat(4, 1fr);
     }
+    .panel-grid-cards{
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        grid-template-columns: 50% 1fr;
+    }
 } 
 @media screen and (max-width: 1120px){
     .result-content-left{
@@ -176,6 +181,58 @@
         padding: 3rem 0;
         padding-top: 5rem ;
     } 
+    .landlord-thead{
+        display: none;
+    }
+    tr{
+        display: block;
+    }
+    td::before{
+        content: attr(data-name);
+        font-weight: 600;
+        padding-right: .75rem;
+        text-align: left;
+    }
+    td:first-child{
+        justify-content: flex-start;
+    }
+}
+@media screen and (min-width: 1024px){
+    th {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        text-align: left;
+    }
+    tr:nth-child(odd) td {
+        background-color: #eae9f0;
+    }
+    td {
+        border-bottom-width: 0;
+        display: table-cell;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: .75rem;
+        padding-right: .75rem;
+        text-align: left;
+        vertical-align: middle;
+    }
+    .image-table-cell{
+        width: 4rem;
+    }
+    .table-images{
+        display: block;
+        position: relative;
+        height: 4rem;
+        width: 4rem;
+    }
+    .table-action-cell{
+        flex-direction: column;
+    }
+    .table-btns:last-child{
+        margin-top: .25rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -548,7 +605,7 @@
     }
     .error-rows{
         flex: 0 0 auto;
-        width: 65%;
+        width: 100%;
     }
     .col-25{
         width: 33.33%;
@@ -626,6 +683,28 @@
     }
     .tm-paragraph-wrap{
         font-size: 1.25rem;
+    }
+    .app-sidebar{
+        width: 70px;
+    }
+    .special-container,
+    .header-desktop{
+        padding-left: 70px;
+    }
+    .use-case-image-responsive.app-logo-name{
+        width: 0;
+    }
+    .left-more-icon{
+        display: none;
+    }
+    .mobile-heading-top{
+        display: block;
+    }
+    .head-body-75 .is-tenant-banners{
+        display: none;
+    }
+    .register .inner {
+        min-width: 768px;
     }
     
 }
@@ -936,9 +1015,6 @@
     }
     .contaier{
         max-width: 720px;
-    }
-    .error-rows{
-        width: 75%;
     }
     .col-25{
         width: 50%;
@@ -1501,6 +1577,43 @@
         margin-bottom: 60px;
         margin-top: 0;
     }
+    .d-flex.is-cols{
+        height: 100%;
+    }
+    .head-body-75{
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .register{
+        background-color: #fff;
+    }
+    .register .form-group {
+        flex-direction: column;
+    }
+    .register .form-group .form-wrapper {
+        width: 100%;
+    }
+    .register .inner {
+        min-width: auto;
+        background: 0 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        box-shadow: none;
+    }
+    .register form {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .image-right-bg{
+        justify-content: center;
+        align-items: center;
+        display: none;
+        width: 0;
+    }
+    
 }
 
 @media screen and (min-width: 768px)  {
@@ -1593,6 +1706,16 @@
         position: sticky;
         top: 100px;
     }
+    .card-dashboard{
+        min-height: 100%;
+    }
+    .error-rows.dash-plot{
+        padding-right: .5rem;
+    }
+    .tables-notify-container{
+        gap: unset;
+        flex-direction: row;
+    }
 }
 @media screen and (max-width: 600px){
     .p5 {
@@ -1631,9 +1754,6 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .error-rows{
-        width: 85%;
-    }
     .sliders-card.for-slide-role{
         width: 330px;
     }
@@ -1665,14 +1785,34 @@
         padding: 2.1rem 0;
         padding-top: 5rem;
     } 
+    .app-sidebar{
+        width: 0;
+    }
+    .special-container,
+    .header-desktop{
+        padding-left: 0px;
+    }
+    #landlordBody .d-flex{
+        position: relative;
+        height: 100%;
+        min-height: 100%;
+        overflow: hidden;   
+    }
+    .hide-600{
+        display: none;
+    }
+    .footer-user{
+        margin-bottom: 75px;
+    }
+    .panel-main-container{
+        height: 100%;
+        margin-bottom: 114px;   
+    }
 }
 
 @media screen and (max-width: 576px){
     .contaier{
         max-width: 540px;
-    }
-    .error-rows{
-        width: 100%;
     }
     .col-25{
         width: 100%;
@@ -1701,6 +1841,10 @@
     .universal-grid-container{
         grid-template-columns: 1fr;
     }
+    .app-sidebar{
+        display: none;
+    }
+    
     
 }
 @media screen and (max-width: 480px) {
